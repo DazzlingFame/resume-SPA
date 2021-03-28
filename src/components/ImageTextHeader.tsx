@@ -1,5 +1,5 @@
 import React from "react";
-import './imageTextHeader.css'
+import './ImageTextHeader.css'
 import {ImageSource} from "../constants";
 
 type PropsType = {
