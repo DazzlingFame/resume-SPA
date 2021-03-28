@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/resume-spa/static/css/main.289c4bfa.chunk.css",
-    "main.js": "/resume-spa/static/js/main.a8f272a0.chunk.js",
-    "main.js.map": "/resume-spa/static/js/main.a8f272a0.chunk.js.map",
+    "main.js": "/resume-spa/static/js/main.2b45e065.chunk.js",
+    "main.js.map": "/resume-spa/static/js/main.2b45e065.chunk.js.map",
     "runtime-main.js": "/resume-spa/static/js/runtime-main.94bd4cc1.js",
     "runtime-main.js.map": "/resume-spa/static/js/runtime-main.94bd4cc1.js.map",
     "static/js/2.627d7adc.chunk.js": "/resume-spa/static/js/2.627d7adc.chunk.js",
@@ -18,7 +18,6 @@
     "static/media/bicycle-min.46e56bd3.jpg": "/resume-spa/static/media/bicycle-min.46e56bd3.jpg",
     "static/media/contacts-photo.d83a2b76.jpg": "/resume-spa/static/media/contacts-photo.d83a2b76.jpg",
     "static/media/dlims-photo.7ece0e71.png": "/resume-spa/static/media/dlims-photo.7ece0e71.png",
-    "static/media/dogeSmiling.a3a1ff86.jpg": "/resume-spa/static/media/dogeSmiling.a3a1ff86.jpg",
     "static/media/e2e-step-def.ce9c4067.png": "/resume-spa/static/media/e2e-step-def.ce9c4067.png",
     "static/media/map-photo.2970dc08.png": "/resume-spa/static/media/map-photo.2970dc08.png",
     "static/media/shiva-min.e287d2fa.jpg": "/resume-spa/static/media/shiva-min.e287d2fa.jpg",
@@ -29,6 +28,6 @@
     "static/js/runtime-main.94bd4cc1.js",
     "static/js/2.627d7adc.chunk.js",
     "static/css/main.289c4bfa.chunk.css",
-    "static/js/main.a8f272a0.chunk.js"
+    "static/js/main.2b45e065.chunk.js"
   ]
 }
