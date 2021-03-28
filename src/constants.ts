@@ -1,7 +1,6 @@
 import {TextWithTranslation} from "./utils/localisation";
 
 import allure from './assets/images/allure.jpg'
-import smilingDoge from './assets/images/dogeSmiling.jpg'
 import aboutMePhoto from './assets/images/about-me-photo.jpg'
 import workPhoto from './assets/images/work-photo.jpg'
 import contactsPhoto from './assets/images/contacts-photo.jpg'
@@ -11,6 +10,8 @@ import bicyclePhoto from './assets/images/bicycle-min.jpg'
 import vkLogo from './assets/images/vk-64x64.png'
 import phoneLogo from './assets/images/phone-64x64.png'
 import telegramLogo from './assets/images/telegram-64x64.png'
+import instagramLogo from './assets/images/instagram.png'
+import githubLogo from './assets/images/github.png'
 import ordersMapPhoto from './assets/images/map-photo.png'
 import dlims from './assets/images/dlims-photo.png'
 import e2eStep from './assets/images/e2e-step-def.png'
@@ -21,9 +22,6 @@ export type ImageSource = {
 }
 
 export const Images: Record<string, ImageSource> = {
-    DOGE_SMILING_IMG: {
-        source: smilingDoge, desc: 'smilingDoge'
-    },
     ALLURE_IMG: {
         source: allure, desc: 'allure'
     },
@@ -51,14 +49,24 @@ export const Images: Record<string, ImageSource> = {
     WARHAMMER_IMG: {
         source: warhammerPhoto, desc: 'warhammer'
     },
-    BICYCLE_IMG: {source:bicyclePhoto , desc: 'bicycle'
+    BICYCLE_IMG: {
+        source:bicyclePhoto , desc: 'bicycle'
     },
-    VK_LOGO: {source: vkLogo, desc: 'vk_logo'
+    VK_LOGO: {
+        source: vkLogo, desc: 'vk_logo'
     },
-    TELEGRAM_LOGO: {source: telegramLogo, desc: 'telegram_logo'
+    TELEGRAM_LOGO: {
+        source: telegramLogo, desc: 'telegram_logo'
     },
-    PHONE_LOGO: {source: phoneLogo, desc: 'phone_logo'
+    PHONE_LOGO: {
+        source: phoneLogo, desc: 'phone_logo'
     },
+    INSTAGRAM_LOGO: {
+        source: instagramLogo, desc: 'instagram_logo'
+    },
+    GITHUB_LOGO: {
+        source: githubLogo, desc: 'github_logo'
+    }
 };
 
 export type HeaderLinksText = {
