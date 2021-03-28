@@ -31,7 +31,11 @@ export const WorkContent: React.FC<Props> = props => {
     };
 
     const navigationLinks = navigationConfig.map(item => (
-        <div className={content === item.type ?  'navigation_link_container navigation_link_container_selected' : 'navigation_link_container'} onClick={() => onContentTabChanged(item.type)}>
+        <div
+            className={content === item.type ?  'navigation_link_container navigation_link_container_selected' : 'navigation_link_container'}
+            onClick={() => onContentTabChanged(item.type)}
+            key={item.text}
+        >
             <p className={'small_text'}>
                 {item.text}
             </p>

@@ -33,9 +33,9 @@ const Selector: React.FC<Props> = (props: Props) => {
                  setIsSelectorVisible(false);
              }
              }>
-            <text className="small_text dropdown-selector__selected-text">
+            <span className="small_text dropdown-selector__selected-text">
                 {toggleState.text}
-            </text>
+            </span>
         </div>
     ));
 
@@ -44,9 +44,9 @@ const Selector: React.FC<Props> = (props: Props) => {
     return (
         <div className={'dropdown-selector__container'}>
             <div className={'dropdown-selector__current-container'} onClick={changeIsSelectorVisibleState}>
-                <text className="regular_text dropdown-selector__current-text">
+                <span className="regular_text dropdown-selector__current-text">
                     {currentState.text}
-                </text>
+                </span>
                 <img className={'dropdown-selector__chevron'} alt={CHEVRON_DOWN.desc} src={CHEVRON_DOWN.source}/>
             </div>
             {isSelectorVisible &&

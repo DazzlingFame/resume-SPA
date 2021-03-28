@@ -38,10 +38,10 @@ const ContactCard: React.FC<Props> = ({texts}) => {
     const contactItems = contactsArray.map(item => (
         <div key={item.text} className="contact_card__contact_item__container">
             {item.type === 'text' ?
-                <text className="small_text contact_card__contact_item__text">
+                <span className="small_text contact_card__contact_item__text">
                     <img className="contact_card__contact_item__image" src={item.img} alt={item.text}/>
                     {item.text}
-                </text>
+                </span>
                 :
                 <a className="small_text contact_card__contact_item__text" href={item.link}>
                     <img className="contact_card__contact_item__image" src={item.img} alt={item.text}/>
@@ -59,7 +59,7 @@ const ContactCard: React.FC<Props> = ({texts}) => {
         <div className="contact_card__container">
             <div className="contact_card__block_container">
                 <img src={Images.CONTACTS_ME.source} alt="contact_photo" className="contact_photo"/>
-                <text className="regular_text contact_name">{texts.name}</text>
+                <span className="regular_text contact_name">{texts.name}</span>
             </div>
             <div className="contact_card__block_container">
                 {contactItems}
