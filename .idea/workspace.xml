@@ -1,9 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="09964c62-f905-46da-8630-de6d113e80de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Rubik-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/about-me-photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/allure.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/bicycle-min.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/bicycle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/checklist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/chevron-down-24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/contacts-photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/dlims-photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/doge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/dogePillow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/dogeSmiling.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/e2e-step-def.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/map-photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/phone-64x64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/shiva-min.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/shiva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/telegram-64x64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/vk-64x64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/warhammer-min.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/warhammer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/work-photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AboutContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ContactCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ContactCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ImageTextHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ImageTextHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LanguageSelector.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Selector.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Selector.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WorkBlock.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WorkBlock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WorkContent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WorkContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/globalStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screen/Resume.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screen/Resume.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/global.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/localisation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/storage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1qNuOhnJttRZeGHt2VdqlYxOt1E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/screen" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/screen" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.deploy">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="redeps" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="redeps" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.redeps" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09964c62-f905-46da-8630-de6d113e80de" name="Default Changelist" comment="" />
+      <created>1616932338962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616932338962</updated>
+      <workItem from="1616932344131" duration="2402000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1771" height="268" key="GridCell.Tab.0.bottom" timestamp="1616934719832">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1771" height="268" key="GridCell.Tab.0.bottom/-227.1105.1792.1095/0.25.1920.1055@0.25.1920.1055" timestamp="1616934719832" />
+    <state width="1771" height="268" key="GridCell.Tab.0.center" timestamp="1616934719831">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1771" height="268" key="GridCell.Tab.0.center/-227.1105.1792.1095/0.25.1920.1055@0.25.1920.1055" timestamp="1616934719831" />
+    <state width="1771" height="268" key="GridCell.Tab.0.left" timestamp="1616934719829">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1771" height="268" key="GridCell.Tab.0.left/-227.1105.1792.1095/0.25.1920.1055@0.25.1920.1055" timestamp="1616934719829" />
+    <state width="1771" height="268" key="GridCell.Tab.0.right" timestamp="1616934719832">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1771" height="268" key="GridCell.Tab.0.right/-227.1105.1792.1095/0.25.1920.1055@0.25.1920.1055" timestamp="1616934719832" />
   </component>
 </project>
