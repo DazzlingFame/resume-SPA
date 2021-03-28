@@ -1,5 +1,12 @@
-### React-SPA web resume site of the Kolesnikov Viacheslav
+# React-SPA business card site of the Kolesnikov Viacheslav
 
-- yarn start - запуск
-- yarn redeps переустановка зависимостей
-- yarn deploy - билд кода и публикация в gh-pages
+## Available Scripts
+
+### `yarn start` 
+Runs the app in the development mode.
+
+### `yarn redeps`
+Reinstall the app's dependencies 
+ 
+### `yarn deploy` 
+Build app and publish it to the gh-pages
