@@ -2,6 +2,7 @@ import '../screen/Resume.css'
 import * as React from "react";
 import {ImageTextHeader} from "./ImageTextHeader";
 import {AboutTexts, Images} from "../constants";
+import {getWidth} from "../utils/global";
 
 type Props = {
     texts: AboutTexts;
@@ -10,8 +11,14 @@ type Props = {
 const photosArray = [Images.BICYCLE_IMG, Images.WARHAMMER_IMG, Images.SHIVA_IMG];
 
 const AboutContent: React.FC<Props> = props => {
+    const imageSize = getWidth() * 0.3;
+
     const photos = photosArray.map(photo => (
-        <img key={photo.desc} src={photo.source} alt={photo.desc} className="flat_photo__item"/>
+        <img key={photo.desc}
+             src={photo.source}
+             alt={photo.desc}
+             style={{width: imageSize, height: imageSize, marginRight: 20, marginTop: 20, objectFit: 'contain', userSelect: 'none'}}
+        />
     ));
     return (
         <div>

@@ -140,18 +140,19 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 ' changing the track, became a React-Native and React developer. \n' +
                 'I graduated from the "Research University of Moscow Institute of Electronic Technology"' +
                 ' with a degree in Software Engineering. It was very interesting to study, we had courses on DBMS, software testing, algorithms, OOP and design patterns that' +
-                ' really came in handy in my work. I love sports, cycling in the summer and snowboarding in the winter, it helps to keep fit and unload my head during hard work' +
-                ' days. I also enjoy board games, participating in tournaments and decorating miniatures in the Warhammer 40k universe. "',        },
+                ' came in handy in my work. I love sports, cycling in the summer and snowboarding in the winter, it helps to keep fit and unload my head during hard work' +
+                ' days. I also enjoy board games, participating in tournaments and decorating miniatures in the Warhammer 40k universe.',
+        },
         ru: {
             sectionName: 'Обо мне',
             header: 'Привет, я Вячеслав Колесников.',
             text: 'В текущий момент я FrontEnd разработчик в команде клиентского сервиса PROFI.RU. В своей карьере я прошел путь от младшего специалиста ' +
                 'по тестированию до Senior QA, а затем, сменив рельс, стал React-Native и React разработчиком. \n' +
                 'Я закончил "Научно исследовательский университет Московский Институт Электронной ' +
-                'Техники" по специальности "Программная инженерия. Учиться было очень интересно, у нас были курсы по СУБД, тестированию ПО, алгоритмам, ООП и паттернам проектирования, которые ' +
-                'реально пригодились мне в работе.\n' +
+                'Техники" по специальности "Программная инженерия". Учиться было очень интересно, у нас были курсы по СУБД, тестированию ПО, алгоритмам, ООП и паттернам проектирования, которые ' +
+                'пригодились мне в работе.\n' +
                 'В свободное время я люблю заниматься спортом, велосипедом летом и сноубордом зимой, это помогает поддерживать себя в форме и разгрузить голову в тяжелые рабочие дни. Так же я ' +
-                'увлекаюсь настольными играми, участием в турнирах и художественным оформлением миниатюр в вселенной Warhammer 40k"',
+                'увлекаюсь настольными играми, участием в турнирах и художественным оформлением миниатюр в вселенной Warhammer 40k',
         },
     },
     workTexts: {
