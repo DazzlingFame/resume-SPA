@@ -48,19 +48,10 @@ type Props = {
 
 const ContactCard: React.FC<Props> = ({texts}) => {
     const contactItems = contactsArray.map(item => (
-        <div key={item.text} className="contact_card__contact_item__container">
-            {item.type === 'text' ?
-                <span className="small_text contact_card__contact_item__text">
-                    <img className="contact_card__contact_item__image" src={item.img} alt={item.text}/>
-                    {item.text}
-                </span>
-                :
-                <a className="small_text contact_card__contact_item__text" href={item.link}>
-                    <img className="contact_card__contact_item__image" src={item.img} alt={item.text}/>
-                    {item.text}
-                </a>
-            }
-        </div>
+        <a key={item.text} className="contact_card__contact_item__container " href={item.link}>
+            <img className="contact_card__contact_item__image" src={item.img} alt={item.text}/>
+            <span className="contact_card__contact_item__text">{item.text}</span>
+        </a>
     ));
 
     return (
