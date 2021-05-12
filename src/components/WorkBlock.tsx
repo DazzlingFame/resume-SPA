@@ -3,7 +3,7 @@ import '../screen/Resume.css';
 import './WorkBlock.css'
 import {Images, WorkBlockTexts} from "../constants";
 import {ImageTextHeader} from "./ImageTextHeader";
-import {getRandomInt, getWidth} from "../utils/global";
+import {getRandomInt} from "../utils/global";
 
 type Props = {
     texts: WorkBlockTexts;
@@ -12,14 +12,12 @@ type Props = {
 }
 
 const WorkBlock: React.FC<Props> = props => {
-    const imageSize = getWidth() * 0.3;
-
     const photos = props.photos.map(photo => (
         <img
             key={photo.desc}
             src={photo.source}
             alt={photo.desc}
-            style={{width: imageSize, height: imageSize, marginRight: 20, marginTop: 20, objectFit: 'contain', userSelect: 'none'}}
+            className={'flat_photo__item'}
         />
     ));
 

@@ -10,9 +10,13 @@
 
     /*font-sizes*/
     --header: 50pt;
+    --header-mobile: 40pt;
     --subHeader: 30pt;
+    --subHeader-mobile: 24pt;
     --regular: 20pt;
+    --regular-mobile: 16pt;
     --small: 15pt;
+    --small-mobile: 12pt;
 
     /* viewport */
     --mobile-to-desktop-boundary: 980px;

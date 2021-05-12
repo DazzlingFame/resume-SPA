@@ -71,9 +71,9 @@ export class Resume extends React.PureComponent<Props, State> {
 
         const headerLinks = this.getHeaderLinksConfig(mainTexts.headerLinks).map(item => (
             <div className={'header_link_container'} onClick={item.onClick} key={item.text}>
-                <p className={'regular_text'}>
+                <span className={'regular_text'}>
                     {item.text}
-                </p>
+                </span>
             </div>
         ));
 
@@ -81,9 +81,9 @@ export class Resume extends React.PureComponent<Props, State> {
             <div className={'root_container'}>
                 <div className={'container'}>
                     <div className={'nav_header_container'}>
-                        <p className={'nav_header_text'}>
+                        <span className={'nav_header_text'}>
                             {mainTexts.header}
-                        </p>
+                        </span>
                         <div className="nav_header_links_container">
                             {headerLinks}
                             <LanguageSelector initialState={this.state.locale} onStateChanged={this.onLanguageChanged}/>
