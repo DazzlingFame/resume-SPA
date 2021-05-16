@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/resume-spa/static/css/main.d098ef7e.chunk.css",
-    "main.js": "/resume-spa/static/js/main.2657a70f.chunk.js",
-    "main.js.map": "/resume-spa/static/js/main.2657a70f.chunk.js.map",
-    "runtime-main.js": "/resume-spa/static/js/runtime-main.94bd4cc1.js",
-    "runtime-main.js.map": "/resume-spa/static/js/runtime-main.94bd4cc1.js.map",
-    "static/js/2.627d7adc.chunk.js": "/resume-spa/static/js/2.627d7adc.chunk.js",
-    "static/js/2.627d7adc.chunk.js.map": "/resume-spa/static/js/2.627d7adc.chunk.js.map",
-    "static/js/3.1e738432.chunk.js": "/resume-spa/static/js/3.1e738432.chunk.js",
-    "static/js/3.1e738432.chunk.js.map": "/resume-spa/static/js/3.1e738432.chunk.js.map",
+    "main.css": "/resume-spa/static/css/main.3504bd42.chunk.css",
+    "main.js": "/resume-spa/static/js/main.545d3205.chunk.js",
+    "main.js.map": "/resume-spa/static/js/main.545d3205.chunk.js.map",
+    "runtime-main.js": "/resume-spa/static/js/runtime-main.e0e4d826.js",
+    "runtime-main.js.map": "/resume-spa/static/js/runtime-main.e0e4d826.js.map",
+    "static/js/2.c6019f7e.chunk.js": "/resume-spa/static/js/2.c6019f7e.chunk.js",
+    "static/js/2.c6019f7e.chunk.js.map": "/resume-spa/static/js/2.c6019f7e.chunk.js.map",
+    "static/js/3.88e50fb3.chunk.js": "/resume-spa/static/js/3.88e50fb3.chunk.js",
+    "static/js/3.88e50fb3.chunk.js.map": "/resume-spa/static/js/3.88e50fb3.chunk.js.map",
     "index.html": "/resume-spa/index.html",
-    "static/css/main.d098ef7e.chunk.css.map": "/resume-spa/static/css/main.d098ef7e.chunk.css.map",
-    "static/js/2.627d7adc.chunk.js.LICENSE.txt": "/resume-spa/static/js/2.627d7adc.chunk.js.LICENSE.txt",
+    "static/css/main.3504bd42.chunk.css.map": "/resume-spa/static/css/main.3504bd42.chunk.css.map",
+    "static/js/2.c6019f7e.chunk.js.LICENSE.txt": "/resume-spa/static/js/2.c6019f7e.chunk.js.LICENSE.txt",
     "static/media/font.css": "/resume-spa/static/media/Rubik-Regular.37a4d906.ttf",
     "static/media/about-me-photo.4a990486.jpg": "/resume-spa/static/media/about-me-photo.4a990486.jpg",
     "static/media/allure.0f0e92c5.jpg": "/resume-spa/static/media/allure.0f0e92c5.jpg",
@@ -25,9 +25,9 @@
     "static/media/work-photo.c6c1bd47.jpg": "/resume-spa/static/media/work-photo.c6c1bd47.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.94bd4cc1.js",
-    "static/js/2.627d7adc.chunk.js",
-    "static/css/main.d098ef7e.chunk.css",
-    "static/js/main.2657a70f.chunk.js"
+    "static/js/runtime-main.e0e4d826.js",
+    "static/js/2.c6019f7e.chunk.js",
+    "static/css/main.3504bd42.chunk.css",
+    "static/js/main.545d3205.chunk.js"
   ]
 }
