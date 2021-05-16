@@ -17,7 +17,7 @@ export const ImageTextHeader: React.FC<PropsType> = (props: PropsType) => {
     ));
     return (
         <div className={'header_container'} key={getRandomInt(1000)}>
-            <img src={props.imageSource.source} alt={props.imageSource.desc} className={'logo'} />
+            <img src={props.imageSource.source} alt={props.imageSource.desc} className={'info_block__image'} />
             <div style={{flexDirection: 'column'}}>
                 {props.header && (
                     <span className={'small_text image_header_text'}> {props.header} <br/></span>

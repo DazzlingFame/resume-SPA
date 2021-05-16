@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import '../screen/Resume.css'
 import './WorkContent.css'
-import WorkBlock from "./WorkBlock";
+import InfoBlock from "./InfoBlock";
 import {Images, WorkTexts} from "../constants";
 
 const WORK_CONTENT_TYPE_KEY = 'WORK_CONTENT_TYPE_KEY';
@@ -69,7 +69,7 @@ export const WorkContent: React.FC<Props> = props => {
                  <div className={'divider'}/>
              </div>
              <div className={'content_container'}>
-                 <WorkBlock texts={contentTexts} photos={photosArray} />
+                 <InfoBlock texts={contentTexts} photos={photosArray} imageSource={Images.WORK_ME_IMG}/>
              </div>
          </div>
     )

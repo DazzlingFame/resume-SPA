@@ -75,22 +75,16 @@ export type HeaderLinksText = {
     contacts: string,
 }
 
-export type AboutTexts = {
-    sectionName: string,
-    header: string,
-    text: string,
-}
-
 export type WorkTexts = {
     header: string;
-    testing: WorkBlockTexts;
-    development: WorkBlockTexts;
+    testing: InfoTexts;
+    development: InfoTexts;
 }
 
-export type WorkBlockTexts = {
+export type InfoTexts = {
     header: string,
     mainData: string;
-    skills: string;
+    skills?: string;
 }
 
 export type MainTexts = {
@@ -106,7 +100,7 @@ export type ContactsTexts = {
 
 type MultiLanguageTexts = {
     mainTexts: TextWithTranslation<MainTexts>;
-    aboutTexts: TextWithTranslation<AboutTexts>,
+    aboutTexts: TextWithTranslation<InfoTexts>,
     workTexts: TextWithTranslation<WorkTexts>,
     contactsTexts: TextWithTranslation<ContactsTexts>,
 }
@@ -134,9 +128,9 @@ export const multiLanguageTexts: MultiLanguageTexts = {
     },
     aboutTexts: {
         en: {
-            sectionName: 'About me',
-            header: 'Hi, I’m Viacheslav Kolesnikov.',
-            text: 'Currently I am a FrontEnd developer in the PROFI.RU customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
+            header: 'About me',
+            mainData: 'Hi, I’m Viacheslav Kolesnikov.\n ' +
+                'Currently I am a FrontEnd developer in the PROFI.RU customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
                 ' changing the track, became a React-Native and React developer. \n' +
                 'I graduated from the "Research University of Moscow Institute of Electronic Technology"' +
                 ' with a degree in Software Engineering. It was very interesting to study, we had courses on DBMS, software testing, algorithms, OOP and design patterns that' +
@@ -144,9 +138,9 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 ' days. I also enjoy board games, participating in tournaments and decorating miniatures in the Warhammer 40k universe.',
         },
         ru: {
-            sectionName: 'Обо мне',
-            header: 'Привет, я Вячеслав Колесников.',
-            text: 'В текущий момент я FrontEnd разработчик в команде клиентского сервиса PROFI.RU. В своей карьере я прошел путь от младшего специалиста ' +
+            header: 'Обо мне',
+            mainData: 'Привет, я Вячеслав Колесников.\n ' +
+                'В текущий момент я FrontEnd разработчик в команде клиентского сервиса PROFI.RU. В своей карьере я прошел путь от младшего специалиста ' +
                 'по тестированию до Senior QA, а затем, сменив рельс, стал React-Native и React разработчиком. \n' +
                 'Я закончил "Научно исследовательский университет Московский Институт Электронной ' +
                 'Техники" по специальности "Программная инженерия". Учиться было очень интересно, у нас были курсы по СУБД, тестированию ПО, алгоритмам, ООП и паттернам проектирования, которые ' +
