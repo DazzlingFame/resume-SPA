@@ -1,4 +1,4 @@
-import React from "react";
+import React, {createRef, useState} from "react";
 import './Resume.css'
 import {getLocaleFromStorage, getLocalisedTexts, LocaleEnum, setLocaleToStorage} from "../utils/localisation";
 import {HeaderLinksText, MainTexts, multiLanguageTexts} from "../constants";
@@ -7,102 +7,93 @@ import LanguageSelector from "../components/LanguageSelector";
 import AboutContent from "../components/AboutContent";
 import {WorkContent} from "../components/WorkContent";
 import ContactCard from "../components/ContactCard";
+import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
 
-type Props = {}
 
-type State = {
-    locale: LocaleEnum;
-}
+export const Resume: React.FC = () => {
+    const workRef = createRef<HTMLDivElement>();
+    const aboutRef = createRef<HTMLDivElement>();
+    const contactsRef = createRef<HTMLDivElement>();
+    const [locale, setLocale] = useState(getLocaleFromStorage());
+    const isMobile = useMedia(IS_MOBILE_LAYOUT_MEDIA);
 
-export class Resume extends React.PureComponent<Props, State> {
-    workRef: React.RefObject<HTMLDivElement> | null;
-    aboutRef: React.RefObject<HTMLDivElement> | null;
-    contactsRef: React.RefObject<HTMLDivElement> | null;
 
-    constructor(props: Props) {
-        super(props);
-        this.workRef = React.createRef<HTMLDivElement>();
-        this.aboutRef = React.createRef<HTMLDivElement>();
-        this.contactsRef = React.createRef<HTMLDivElement>();
-
-        this.state = {
-            locale:  getLocaleFromStorage(),
-        }
-    }
-
-    getHeaderLinksConfig = ({work, about, contacts}: HeaderLinksText) => ([
+    const getHeaderLinksConfig = ({work, about, contacts}: HeaderLinksText) => ([
         {
             text: about, onClick: () => {
-                this.aboutRef?.current && this.aboutRef.current.scrollIntoView({behavior: "smooth", block: "start"});
+                aboutRef?.current && aboutRef.current.scrollIntoView({behavior: "smooth", block: "start"});
             }
         },
         {
             text: work, onClick: () => {
-                this.workRef?.current && this.workRef.current.scrollIntoView({behavior: "smooth", block: "start"});
+                workRef?.current && workRef.current.scrollIntoView({behavior: "smooth", block: "start"});
             }
         },
         {
             text: contacts, onClick: () => {
-                this.contactsRef?.current && this.contactsRef.current.scrollIntoView({behavior: "smooth", block: "start"});
+                contactsRef?.current && contactsRef.current.scrollIntoView({behavior: "smooth", block: "start"});
             }
         },
     ]);
 
-    onLanguageChanged = (pickedState: SelectorItem) => {
+    const onLanguageChanged = (pickedState: SelectorItem) => {
         switch (pickedState.code) {
             case LocaleEnum.en:
-                this.setState({
-                    locale: LocaleEnum.en,
-                });
+                setLocale(LocaleEnum.en);
                 setLocaleToStorage(LocaleEnum.en);
                 break;
             case LocaleEnum.ru:
-                this.setState({
-                    locale: LocaleEnum.ru,
-                });
+                setLocale(LocaleEnum.ru);
                 setLocaleToStorage(LocaleEnum.ru);
                 break;
         }
     };
 
-    render() {
-        const mainTexts: MainTexts = getLocalisedTexts(multiLanguageTexts.mainTexts, this.state.locale);
-        const contactsTexts = getLocalisedTexts(multiLanguageTexts.contactsTexts, this.state.locale);
+    const mainTexts: MainTexts = getLocalisedTexts(multiLanguageTexts.mainTexts, locale);
+    const contactsTexts = getLocalisedTexts(multiLanguageTexts.contactsTexts, locale);
 
-        const headerLinks = this.getHeaderLinksConfig(mainTexts.headerLinks).map(item => (
-            <div className={'header_link_container'} onClick={item.onClick} key={item.text}>
+    const headerLinks = getHeaderLinksConfig(mainTexts.headerLinks).map(item => (
+        <div className={'header_link_container'} onClick={item.onClick} key={item.text}>
                 <span className={'regular_text'}>
                     {item.text}
                 </span>
-            </div>
-        ));
+        </div>
+    ));
 
         return (
             <div className={'root_container'}>
                 <div className={'container'}>
                     <div className={'nav_header_container'}>
-                        <span className={'nav_header_text'}>
-                            {mainTexts.header}
-                        </span>
+                        <div>
+                             <span className={'nav_header_text'}>
+                                {mainTexts.header}
+                             </span>
+                            {isMobile && (
+                                <p className={'bold_header_text'}>
+                                    {mainTexts.welcome}
+                                </p>
+                            )}
+                        </div>
                         <div className="nav_header_links_container">
                             {headerLinks}
-                            <LanguageSelector initialState={this.state.locale} onStateChanged={this.onLanguageChanged}/>
+                            <LanguageSelector initialState={locale} onStateChanged={onLanguageChanged}/>
                         </div>
                     </div>
-                    <p className={'bold_header_text'}>
+                    {!isMobile &&
+                    <span className={'bold_header_text'}>
                         {mainTexts.welcome}
-                    </p>
-                    <div ref={this.aboutRef}>
-                        <AboutContent texts={getLocalisedTexts(multiLanguageTexts.aboutTexts, this.state.locale)}/>
+                    </span>
+                    }
+                    <div ref={aboutRef}>
+                        <AboutContent texts={getLocalisedTexts(multiLanguageTexts.aboutTexts, locale)}/>
                     </div>
-                    <div ref={this.workRef}>
-                        <WorkContent texts={getLocalisedTexts(multiLanguageTexts.workTexts, this.state.locale)}/>
+                    <div ref={workRef}>
+                        <WorkContent texts={getLocalisedTexts(multiLanguageTexts.workTexts, locale)}/>
                     </div>
-                    <div ref={this.contactsRef}>
+                    <div ref={contactsRef}>
                         <ContactCard texts={contactsTexts}/>
                     </div>
                 </div>
             </div>
         )
     }
-}
