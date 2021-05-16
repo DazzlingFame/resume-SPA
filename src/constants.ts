@@ -174,7 +174,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                     "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others. Over time, the company began to update the site for executors with " +
                     "the subsequent transition to React, in which I also take an active part. \n Now I am a developer at PROFI.RU, who is not afraid of new challenges and is always ready to learn.",
                 skills: 'Skills: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
-                continue: 'Далее',
+                continue: 'Read more',
             },
         },
         ru: {
@@ -188,7 +188,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                     'автоматизации части регрессов. С университета у меня были навыки программирования на Java и первая версия автоматизации была реализована на BDD фреймворке JBehave, а затем, порефлексировав ' +
                     'над результатами мы решили перейти на JS и WebdriverIO. В итоге мы сократили время регрессионного тестирования обеих платформ мобильного приложения в команде с 1-2 дней до 4-6 часов.',
                 skills: 'Навыки: Agile, Scrum, Jira, BDD, Manual testing, Regression testing, Mobile testing, Automated testing, WDIO, WebdriverIO',
-                continue: 'Read more',
+                continue: 'Далее',
             },
             development: {
                 header: 'Разработка',
