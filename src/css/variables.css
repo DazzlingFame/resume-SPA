@@ -14,9 +14,9 @@
     --subHeader: 30pt;
     --subHeader-mobile: 24pt;
     --regular: 20pt;
-    --regular-mobile: 18pt;
+    --regular-mobile: 15pt;
     --small: 15pt;
-    --small-mobile: 15pt;
+    --small-mobile: 12pt;
 
     /* viewport */
     --mobile-to-desktop-boundary: 980px;

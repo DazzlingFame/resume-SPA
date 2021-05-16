@@ -3,7 +3,7 @@
     position: relative;
     color: white;
     width: 100%;
-    min-width: 440px;
+    min-width: 375px;
     background-color: var(--primaryDark);
 }
 
@@ -100,9 +100,9 @@
 }
 
 .flat_photo__item {
-    max-width: 400px;
+    max-width: 30%;
     max-height: 400px;
-    margin: 10px;
+    padding: 10px;
     user-select: none;
     object-fit: contain;
 }
@@ -130,5 +130,9 @@
     .header_link_container {
         margin-right: 0;
         margin-bottom: 12px;
+    }
+    .flat_photo__item {
+        max-height: 355px;
+        max-width: 355px;
     }
 }
