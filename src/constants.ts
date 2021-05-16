@@ -85,6 +85,7 @@ export type InfoTexts = {
     header: string,
     mainData: string;
     skills?: string;
+    continue: string;
 }
 
 export type MainTexts = {
@@ -136,6 +137,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 ' with a degree in Software Engineering. It was very interesting to study, we had courses on DBMS, software testing, algorithms, OOP and design patterns that' +
                 ' came in handy in my work. I love sports, cycling in the summer and snowboarding in the winter, it helps to keep fit and unload my head during hard work' +
                 ' days. I also enjoy board games, participating in tournaments and decorating miniatures in the Warhammer 40k universe.',
+            continue: 'Read more',
         },
         ru: {
             header: 'Обо мне',
@@ -147,6 +149,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 'пригодились мне в работе.\n' +
                 'В свободное время я люблю заниматься спортом, велосипедом летом и сноубордом зимой, это помогает поддерживать себя в форме и разгрузить голову в тяжелые рабочие дни. Так же я ' +
                 'увлекаюсь настольными играми, участием в турнирах и художественным оформлением миниатюр в вселенной Warhammer 40k',
+            continue: 'Далее',
         },
     },
     workTexts: {
@@ -161,7 +164,8 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                     "try to automate some of the regressions. From university, I had Java programming skills and the first version of automation was implemented on the BDD framework JBehave, " +
                     "and then, after reflecting on the results, we decided to switch to JS and WebdriverIO. As a result, we have reduced the time for regression testing of both platforms of " +
                     "the mobile application in a team from 1-2 days to 4-6 hours.",
-                skills: 'Skills: Agile, Scrum, Jira, BDD, Manual testing, Regression testing, Mobile testing, Automated testing, WDIO, WebdriverIO'
+                skills: 'Skills: Agile, Scrum, Jira, BDD, Manual testing, Regression testing, Mobile testing, Automated testing, WDIO, WebdriverIO',
+                continue: 'Read more',
             },
             development: {
                 header: 'Development',
@@ -169,7 +173,8 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                     "which replaced old Kotlin and Swift applications. I have solved many tasks of transferring functionality to a new platform and improving it: creating the client side of " +
                     "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others. Over time, the company began to update the site for executors with " +
                     "the subsequent transition to React, in which I also take an active part. \n Now I am a developer at PROFI.RU, who is not afraid of new challenges and is always ready to learn.",
-                skills: 'Skills: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum'
+                skills: 'Skills: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
+                continue: 'Далее',
             },
         },
         ru: {
@@ -182,7 +187,8 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                     'Компания положительно относилась к инициативам работников, а из-за особенностей спринтов у меня начало появляться свободное время, и мы с моим тимлидом приняли решение предпринять попытку ' +
                     'автоматизации части регрессов. С университета у меня были навыки программирования на Java и первая версия автоматизации была реализована на BDD фреймворке JBehave, а затем, порефлексировав ' +
                     'над результатами мы решили перейти на JS и WebdriverIO. В итоге мы сократили время регрессионного тестирования обеих платформ мобильного приложения в команде с 1-2 дней до 4-6 часов.',
-                skills: 'Навыки: Agile, Scrum, Jira, BDD, Manual testing, Regression testing, Mobile testing, Automated testing, WDIO, WebdriverIO'
+                skills: 'Навыки: Agile, Scrum, Jira, BDD, Manual testing, Regression testing, Mobile testing, Automated testing, WDIO, WebdriverIO',
+                continue: 'Read more',
             },
             development: {
                 header: 'Разработка',
@@ -191,7 +197,8 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                     "создание клиентской части фильтров для поиска нужных заказов, системы Cross-Sell, in-app уведомлений и многие другие. Со временем компания начала обновлять сайт для " +
                     "специалистов с последующим переходом на React, в чем я так же принимаю активное участие. \n" +
                     "Сейчас я developer в PROFI.RU, который не боится новых вызовов и всегда готов учиться.",
-                skills: 'Навыки: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum'
+                skills: 'Навыки: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
+                continue: 'Далее',
             },
         },
     },

@@ -91,6 +91,10 @@
     user-select: none;
 }
 
+.text_link {
+    color: var(--secondaryColor);
+}
+
 .flat_photo__container {
     display: flex;
     flex-direction: row;

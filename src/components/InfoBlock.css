@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: 20px;
 }
 
 .info_block__image {

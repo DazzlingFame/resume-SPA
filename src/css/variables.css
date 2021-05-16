@@ -9,10 +9,10 @@
     --grey: #999999;
 
     /*font-sizes*/
-    --header: 50pt;
-    --header-mobile: 35pt;
+    --header: 40pt;
+    --header-mobile: 25pt;
     --subHeader: 30pt;
-    --subHeader-mobile: 24pt;
+    --subHeader-mobile: 20pt;
     --regular: 20pt;
     --regular-mobile: 15pt;
     --small: 15pt;

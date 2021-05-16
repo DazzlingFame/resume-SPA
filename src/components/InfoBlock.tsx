@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import '../screen/Resume.css';
 import './InfoBlock.css'
 import {ImageSource, InfoTexts} from "../constants";
 import {getRandomInt} from "../utils/global";
+import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
 
 type Props = {
     texts: InfoTexts;
@@ -11,6 +12,8 @@ type Props = {
 }
 
 const InfoBlock: React.FC<Props> = props => {
+    const isMobile = useMedia(IS_MOBILE_LAYOUT_MEDIA);
+    const [isCollapsed, setIsCollapsed] = useState(true);
     const photos = props.photos.map(photo => (
         <img
             key={photo.desc}
@@ -20,10 +23,20 @@ const InfoBlock: React.FC<Props> = props => {
         />
     ));
 
-    const textBlocks = props.texts.mainData.split('\n').map(textBlock => (
-        <p className="small_text" key={getRandomInt(1000)}>
+    const onReadMoreClick = () => {
+        setIsCollapsed(false);
+    }
+
+    const mainText = isMobile && isCollapsed ? props.texts.mainData.substr(0, 200).trimEnd().concat('...') : props.texts.mainData;
+
+    const textBlocks = mainText.split('\n').map((textBlock, index, array) => (
+        <>
+        <span className="small_text" key={getRandomInt(1000)}>
             {textBlock}
-        </p>
+        </span>
+            {index !== array.length - 1 && <br/>}
+        </>
+
     ));
 
     return (
@@ -32,6 +45,9 @@ const InfoBlock: React.FC<Props> = props => {
                 <img src={props.imageSource.source} alt={props.imageSource.desc} className="info_block__image" />
                 <div style={{flexDirection: 'column'}}>
                     {textBlocks}
+                    {props.texts.mainData.length > 200 && isCollapsed && isMobile &&
+                        <span className={"small_text text_link"} onClick={onReadMoreClick}>{props.texts.continue}</span>
+                    }
                     <p className="small_text">
                         {props.texts.skills}
                     </p>
