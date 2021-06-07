@@ -21,6 +21,16 @@ export type ImageSource = {
     desc: string;
 }
 
+export const COLORS = {
+    primaryColor: '#344955',
+    primaryDark: '#232F34',
+    primaryLight: '#4A6572',
+    secondaryColor: '#E99922',
+    secondaryLight: '#F9AA33',
+    textWhite: '#f5f5f5',
+    grey: '#999999',
+}
+
 export const Images: Record<string, ImageSource> = {
     ALLURE_IMG: {
         source: allure, desc: 'allure'

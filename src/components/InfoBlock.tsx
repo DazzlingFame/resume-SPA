@@ -31,10 +31,10 @@ const InfoBlock: React.FC<Props> = props => {
 
     const textBlocks = mainText.split('\n').map((textBlock, index, array) => (
         <>
-        <span className="small_text" key={getRandomInt(1000)}>
+        <span className="small_text" key={textBlock.substr(0, 10)}>
             {textBlock}
         </span>
-            {index !== array.length - 1 && <br/>}
+            {index !== array.length - 1 && <br key={textBlock.substr(0, 9)}/>}
         </>
 
     ));

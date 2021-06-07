@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import chevronDown from '../assets/images/chevron-down-24.png'
 import './Selector.css'
+import {SelectorContainer} from "./SelectorStyles";
 
 export const CHEVRON_DOWN = {
     source: chevronDown, desc: 'chevronDown'
@@ -28,9 +29,9 @@ const Selector: React.FC<Props> = (props: Props) => {
     const toggleItems = items.map(toggleState => (
         <div className="dropdown-selector__selected-container"
              onClick={() => {
+                 setIsSelectorVisible(false);
                  setCurrentState(toggleState);
                  onStateChanged(toggleState);
-                 setIsSelectorVisible(false);
              }
              }>
             <span className="small_text dropdown-selector__selected-text">
@@ -49,11 +50,9 @@ const Selector: React.FC<Props> = (props: Props) => {
                 </span>
                 <img className={'dropdown-selector__chevron'} alt={CHEVRON_DOWN.desc} src={CHEVRON_DOWN.source}/>
             </div>
-            {isSelectorVisible &&
-            <div className={'dropdown-selector__selector-container'}>
+            <SelectorContainer isOpened={isSelectorVisible}>
                 {toggleItems}
-            </div>
-            }
+            </SelectorContainer>
         </div>
     )
 };
