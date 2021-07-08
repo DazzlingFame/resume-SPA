@@ -2,8 +2,17 @@ import React, {useState} from "react";
 import '../screen/Resume.css';
 import './InfoBlock.css'
 import {ImageSource, InfoTexts} from "../constants";
-import {getRandomInt} from "../utils/global";
 import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
+import styled from "styled-components";
+
+type TextBlocksContainerProps = {
+    isCollapsed?: boolean;
+}
+const TextBlocksContainer = styled.div<TextBlocksContainerProps>`
+    max-height: ${props => props.isCollapsed ? 150 : 1500}px;
+    transition: max-height 500ms;
+    overflow: hidden;
+`;
 
 type Props = {
     texts: InfoTexts;
@@ -27,9 +36,7 @@ const InfoBlock: React.FC<Props> = props => {
         setIsCollapsed(false);
     }
 
-    const mainText = isMobile && isCollapsed ? props.texts.mainData.substr(0, 200).trimEnd().concat('...') : props.texts.mainData;
-
-    const textBlocks = mainText.split('\n').map((textBlock, index, array) => (
+    const textBlocks = props.texts.mainData.split('\n').map((textBlock, index, array) => (
         <>
         <span className="small_text" key={textBlock.substr(0, 10)}>
             {textBlock}
@@ -39,12 +46,15 @@ const InfoBlock: React.FC<Props> = props => {
 
     ));
 
+
     return (
-        <div className="info_block__container" key={props.texts.header}>
-            <div className="header_container" key={getRandomInt(1000)}>
+        <div className="info_block__container" key={props.imageSource.desc}>
+            <div className="header_container" key={`${props.imageSource.desc}_container`}>
                 <img src={props.imageSource.source} alt={props.imageSource.desc} className="info_block__image" />
                 <div style={{flexDirection: 'column'}}>
-                    {textBlocks}
+                    <TextBlocksContainer isCollapsed={isCollapsed && isMobile}>
+                        {textBlocks}
+                    </TextBlocksContainer>
                     {props.texts.mainData.length > 200 && isCollapsed && isMobile &&
                         <span className={"small_text text_link"} onClick={onReadMoreClick}>{props.texts.continue}</span>
                     }
