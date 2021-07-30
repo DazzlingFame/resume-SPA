@@ -141,7 +141,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
         en: {
             header: 'About me',
             mainData: 'Hi, I’m Viacheslav Kolesnikov.\n ' +
-                'Currently I am a FrontEnd developer in the PROFI.RU customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
+                'Currently I am a FrontEnd developer in the Profi.ru customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
                 ' changing the track, became a React-Native and React developer. \n' +
                 'I graduated from the "Research University of Moscow Institute of Electronic Technology"' +
                 ' with a degree in Software Engineering. It was very interesting to study, we had courses on DBMS, software testing, algorithms, OOP and design patterns that' +
@@ -152,7 +152,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
         ru: {
             header: 'Обо мне',
             mainData: 'Привет, я Вячеслав Колесников.\n ' +
-                'В текущий момент я FrontEnd разработчик в команде клиентского сервиса PROFI.RU. В своей карьере я прошел путь от младшего специалиста ' +
+                'В текущий момент я FrontEnd разработчик в команде клиентского сервиса ПРОФИ. В своей карьере я прошел путь от младшего специалиста ' +
                 'по тестированию до Senior QA, а затем, сменив рельс, стал React-Native и React разработчиком. \n' +
                 'Я закончил "Научно исследовательский университет Московский Институт Электронной ' +
                 'Техники" по специальности "Программная инженерия". Учиться было очень интересно, у нас были курсы по СУБД, тестированию ПО, алгоритмам, ООП и паттернам проектирования, которые ' +
@@ -167,7 +167,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
             header: 'Work',
             testing: {
                 header: 'Testing',
-                mainData: "In 2017 I graduated from the university and got a job at PROFI.RU as a junior " +
+                mainData: "In 2017 I graduated from the university and got a job at Profi.ru as a junior " +
                     "testing specialist, in the future, leaving this position as a Senior QA. I joined the mobile development team and immediately got into work. The mentor quickly taught " +
                     "me how to use Jira as a task and bug tracker, I began to closely engage in functional testing, regression testing, writing test cases and checklists. \n" +
                     "The company had a positive attitude towards employee initiatives, and due to the specialty of the sprints, I started to have free time, and my team lead and I decided to " +
@@ -191,7 +191,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
             header: 'Работа',
             testing: {
                 header: 'Тестирование',
-                mainData: 'В 2017 году я закончил университет и устроился в PROFI.RU в качестве младшего специалиста по тестированию, ' +
+                mainData: 'В 2017 году я закончил университет и устроился в ПРОФИ в качестве младшего специалиста по тестированию, ' +
                     'в будущем, покинув эту должность в качестве Senior QA. Я попал в команду мобильной разработки и сразу включился в работу. Ментор быстро научила меня пользоваться Jira в качестве таск и ' +
                     'баг трекера, я начал плотно заниматься функциональным тестированием задач, регрессионным тестированием, составлением тест кейсов и чеклистов. \n' +
                     'Компания положительно относилась к инициативам работников, а из-за особенностей спринтов у меня начало появляться свободное время, и мы с моим тимлидом приняли решение предпринять попытку ' +
