@@ -16,7 +16,9 @@
     --regular: 20pt;
     --regular-mobile: 15pt;
     --small: 15pt;
+    --small-lineheight: 18pt;
     --small-mobile: 12pt;
+    --small-mobile-lineheight: 15pt;
 
     /* viewport */
     --mobile-to-desktop-boundary: 980px;

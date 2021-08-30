@@ -4,7 +4,7 @@ type TextBlocksContainerProps = {
     isCollapsed?: boolean;
 }
 export const TextBlocksContainer = styled.div<TextBlocksContainerProps>`
-    max-height: ${props => props.isCollapsed ? 145 : 1500}px;
+    max-height: ${props => props.isCollapsed ? 140 : 1500}px;
     transition: max-height 500ms;
     overflow: hidden;
 `;

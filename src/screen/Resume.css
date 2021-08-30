@@ -88,6 +88,7 @@
 .small_text {
     font-family: Rubic, monospace;
     font-size: var(--small);
+    line-height: var(--small-lineheight);
     user-select: none;
 }
 
@@ -126,7 +127,7 @@
     }
     .small_text {
         font-size: var(--small-mobile);
-        line-height: var(--small-mobile);
+        line-height: var(--small-mobile-lineheight);
     }
     .nav_header_links_container {
         align-items: flex-end;
