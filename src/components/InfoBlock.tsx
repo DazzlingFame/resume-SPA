@@ -24,7 +24,7 @@ const InfoBlock: React.FC<Props> = (props) => {
   } | null>(null);
   const photos = props.photos.map((photo) => (
     <img
-      onClick={() => setActiveFullscreenPhoto(photo)}
+      onClick={() => !isMobile && setActiveFullscreenPhoto(photo)}
       key={photo.desc}
       src={photo.source}
       alt={photo.desc}

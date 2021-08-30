@@ -46,7 +46,7 @@ export const WorkContent: React.FC<Props> = props => {
         case ContentType.DEVELOPER: {
             contentTexts = props.texts.development;
             photosArray = [
-                Images.ORDERS_MAP_IMG, Images.DLIMS_IMG
+                Images.ORDERS_MAP_IMG, Images.DLIMS_IMG, Images.ORDERS_BOARD
             ];
             break;
         }
