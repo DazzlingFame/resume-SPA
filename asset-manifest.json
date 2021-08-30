@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/resume-spa/static/css/main.3504bd42.chunk.css",
-    "main.js": "/resume-spa/static/js/main.68c83aee.chunk.js",
-    "main.js.map": "/resume-spa/static/js/main.68c83aee.chunk.js.map",
+    "main.css": "/resume-spa/static/css/main.15c8f98f.chunk.css",
+    "main.js": "/resume-spa/static/js/main.cfc29ea9.chunk.js",
+    "main.js.map": "/resume-spa/static/js/main.cfc29ea9.chunk.js.map",
     "runtime-main.js": "/resume-spa/static/js/runtime-main.dc1830f8.js",
     "runtime-main.js.map": "/resume-spa/static/js/runtime-main.dc1830f8.js.map",
     "static/js/2.37f0e3c2.chunk.js": "/resume-spa/static/js/2.37f0e3c2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.823b4d6f.chunk.js": "/resume-spa/static/js/3.823b4d6f.chunk.js",
     "static/js/3.823b4d6f.chunk.js.map": "/resume-spa/static/js/3.823b4d6f.chunk.js.map",
     "index.html": "/resume-spa/index.html",
-    "static/css/main.3504bd42.chunk.css.map": "/resume-spa/static/css/main.3504bd42.chunk.css.map",
+    "static/css/main.15c8f98f.chunk.css.map": "/resume-spa/static/css/main.15c8f98f.chunk.css.map",
     "static/js/2.37f0e3c2.chunk.js.LICENSE.txt": "/resume-spa/static/js/2.37f0e3c2.chunk.js.LICENSE.txt",
     "static/media/font.css": "/resume-spa/static/media/Rubik-Regular.37a4d906.ttf",
     "static/media/about-me-photo.4a990486.jpg": "/resume-spa/static/media/about-me-photo.4a990486.jpg",
@@ -20,6 +20,7 @@
     "static/media/dlims-photo.7ece0e71.png": "/resume-spa/static/media/dlims-photo.7ece0e71.png",
     "static/media/e2e-step-def.ce9c4067.png": "/resume-spa/static/media/e2e-step-def.ce9c4067.png",
     "static/media/map-photo.2970dc08.png": "/resume-spa/static/media/map-photo.2970dc08.png",
+    "static/media/orders-board.accd55b0.png": "/resume-spa/static/media/orders-board.accd55b0.png",
     "static/media/shiva-min.e287d2fa.jpg": "/resume-spa/static/media/shiva-min.e287d2fa.jpg",
     "static/media/warhammer-min.d92ff71d.jpg": "/resume-spa/static/media/warhammer-min.d92ff71d.jpg",
     "static/media/work-photo.c6c1bd47.jpg": "/resume-spa/static/media/work-photo.c6c1bd47.jpg"
@@ -27,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.dc1830f8.js",
     "static/js/2.37f0e3c2.chunk.js",
-    "static/css/main.3504bd42.chunk.css",
-    "static/js/main.68c83aee.chunk.js"
+    "static/css/main.15c8f98f.chunk.css",
+    "static/js/main.cfc29ea9.chunk.js"
   ]
 }
