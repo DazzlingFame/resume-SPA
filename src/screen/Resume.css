@@ -126,6 +126,7 @@
     }
     .small_text {
         font-size: var(--small-mobile);
+        line-height: var(--small-mobile);
     }
     .nav_header_links_container {
         align-items: flex-end;
