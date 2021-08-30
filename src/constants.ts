@@ -141,7 +141,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
         en: {
             header: 'About me',
             mainData: 'Hi, I’m Viacheslav Kolesnikov.\n ' +
-                'Currently I am a FrontEnd developer in the Profi.ru customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
+                'Currently I am a FrontEnd developer in the PROFI customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
                 ' changing the track, became a React-Native and React developer. \n' +
                 'I graduated from the "Research University of Moscow Institute of Electronic Technology"' +
                 ' with a degree in Software Engineering. It was very interesting to study, we had courses on DBMS, software testing, algorithms, OOP and design patterns that' +
@@ -182,7 +182,9 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 mainData: "I have been developing mobile and web applications since 2019. I originally started as a React-Native developer. My team and I worked on a new application for executors, " +
                     "which replaced old Kotlin and Swift applications. I have solved many tasks of transferring functionality to a new platform and improving it: creating the client side of " +
                     "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others. Over time, the company began to update the site for executors with " +
-                    "the subsequent transition to React, in which I also take an active part. \n Now I am a developer at PROFI.RU, who is not afraid of new challenges and is always ready to learn.",
+                    "the subsequent transition to React, in which I also take an active part, developing not only visual components, but also low-level logic of the new orders board, " +
+                    "including: the logic of universal pagination, return to the board page without reloading content, analytics of objects entering the viewport, and much more. \n " +
+                    "Now I am a developer at PROFI, who is not afraid of new challenges and is always ready to learn.",
                 skills: 'Skills: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
                 continue: '... Read more',
             },
@@ -205,8 +207,9 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 mainData: "Я занимаюсь разработкой мобильных и Web приложений с 2019 года. Изначально я начал как React-Native разработчик. Мы с командой трудились над новым приложением для " +
                     "специалистов, которое пришло на замену старых приложений на Kotlin и Swift. Я решил много задач по переносу функционала на новую платформу и его усовершенствованию: " +
                     "создание клиентской части фильтров для поиска нужных заказов, системы Cross-Sell, in-app уведомлений и многие другие. Со временем компания начала обновлять сайт для " +
-                    "специалистов с последующим переходом на React, в чем я так же принимаю активное участие. \n" +
-                    "Сейчас я developer в PROFI.RU, который не боится новых вызовов и всегда готов учиться.",
+                    "специалистов с последующим переходом на React, в чем я так же принял активное участие, занявшись разработкой не только визуальных компонентов, но и низкоуровневой логики " +
+                    "работы новой доски заказов, в том числе: логики универсальной пагинации, возврата на страницу доски без перезагрузки контента, аналитики попадания объектов во вьюпорт и многим другим. \n" +
+                    "Сейчас я developer в ПРОФИ, который не боится новых вызовов и всегда готов учиться.",
                 skills: 'Навыки: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
                 continue: '... Далее',
             },
