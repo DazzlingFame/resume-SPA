@@ -6,6 +6,8 @@ import { IS_MOBILE_LAYOUT_MEDIA, useMedia } from "../utils/useMedia";
 import {
   FullscreenPhoto,
   FullscreenPhotoContainer,
+  Skills,
+  TextBlock,
   TextBlocksContainer,
 } from "./InfoBlockComponents";
 
@@ -36,17 +38,6 @@ const InfoBlock: React.FC<Props> = (props) => {
     setIsCollapsed(false);
   };
 
-  const textBlocks = props.texts.mainData
-    .split("\n")
-    .map((textBlock, index, array) => (
-      <>
-        <span className="small_text" key={textBlock.substr(0, 10)}>
-          {textBlock}
-        </span>
-        {index !== array.length - 1 && <br key={textBlock.substr(0, 9)} />}
-      </>
-    ));
-
   return (
     <div className="info_block__container" key={props.imageSource.desc}>
       <FullscreenPhotoContainer
@@ -69,17 +60,22 @@ const InfoBlock: React.FC<Props> = (props) => {
           alt={props.imageSource.desc}
           className="info_block__image"
         />
-        <div style={{ flexDirection: "column" }}>
-          <TextBlocksContainer isCollapsed={isCollapsed && isMobile}>
-            {textBlocks}
-          </TextBlocksContainer>
+        <TextBlocksContainer>
+          <TextBlock>
+            {props.texts.mainData.substr(0, props.texts.mainData.indexOf("\n"))}
+          </TextBlock>
+          <TextBlock isCollapsed={isCollapsed}>
+            {props.texts.mainData.substr(
+              props.texts.mainData.indexOf("\n") + 1
+            )}
+          </TextBlock>
           {props.texts.mainData.length > 200 && isCollapsed && isMobile && (
             <span className={"small_text text_link"} onClick={onReadMoreClick}>
               {props.texts.continue}
             </span>
           )}
-          <p className="small_text">{props.texts.skills}</p>
-        </div>
+          <Skills>{props.texts.skills}</Skills>
+        </TextBlocksContainer>
       </div>
       <div className="flat_photo__container">{photos}</div>
     </div>

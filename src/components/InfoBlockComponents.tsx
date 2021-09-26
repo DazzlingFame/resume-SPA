@@ -1,17 +1,30 @@
 import styled from "styled-components";
+import {smallTextStyles} from "../styledPresets";
 
-type TextBlocksContainerProps = {
-    isCollapsed?: boolean;
-}
-export const TextBlocksContainer = styled.div<TextBlocksContainerProps>`
-    max-height: ${props => props.isCollapsed ? 140 : 1500}px;
-    transition: max-height 500ms;
-    overflow: hidden;
+export const TextBlocksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+type TextBlockProps = {
+  isCollapsed?: boolean;
+};
+export const TextBlock = styled.span<TextBlockProps>`
+  max-height: ${(props) => (props.isCollapsed ? 0 : 1500)}px;
+  transition: max-height 500ms;
+  overflow: hidden;
+  white-space: pre-wrap;
+
+  ${smallTextStyles}
+`;
+
+export const Skills = styled.p`
+  ${smallTextStyles}
 `;
 
 type FullscreenPhotoProps = {
-    isActive: boolean;
-}
+  isActive: boolean;
+};
 export const FullscreenPhotoContainer = styled.div<FullscreenPhotoProps>`
   position: fixed;
   top: 0;
@@ -22,7 +35,9 @@ export const FullscreenPhotoContainer = styled.div<FullscreenPhotoProps>`
   pointer-events: none;
   height: 100%;
   width: 100%;
-  ${props => props.isActive && `
+  ${(props) =>
+    props.isActive &&
+    `
       background-color: rgba(0, 0, 0, 0.8);
       pointer-events: auto;
   `};
@@ -31,7 +46,9 @@ export const FullscreenPhotoContainer = styled.div<FullscreenPhotoProps>`
 
 export const FullscreenPhoto = styled.img<FullscreenPhotoProps>`
   height: 0;
-  ${props => props.isActive && `
+  ${(props) =>
+    props.isActive &&
+    `
         height: 80%;
   `};
   transition: height 300ms;
