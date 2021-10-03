@@ -6,18 +6,6 @@ export const TextBlocksContainer = styled.div`
   flex-direction: column;
 `;
 
-type TextBlockProps = {
-  isCollapsed?: boolean;
-};
-export const TextBlock = styled.span<TextBlockProps>`
-  max-height: ${(props) => (props.isCollapsed ? 0 : 1500)}px;
-  transition: max-height 500ms;
-  overflow: hidden;
-  white-space: pre-wrap;
-
-  ${smallTextStyles}
-`;
-
 export const Skills = styled.p`
   ${smallTextStyles}
 `;

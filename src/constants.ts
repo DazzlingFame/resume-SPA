@@ -144,9 +144,8 @@ export const multiLanguageTexts: MultiLanguageTexts = {
     aboutTexts: {
         en: {
             header: 'About me',
-            mainData: 'Hi, I’m Viacheslav Kolesnikov.\n ' +
-                'Currently I am a FrontEnd developer in the PROFI customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
-                ' changing the track, became a React-Native and React developer. \n\n' +
+            mainData: 'Hi, I’m Viacheslav Kolesnikov. Currently I am a FrontEnd developer in the PROFI customer service team. In my career, I went from a junior tester to Senior QA, and then,' +
+                ' changing the track, became a React-Native and React developer. \n' +
                 'I graduated from the "Research University of Moscow Institute of Electronic Technology"' +
                 ' with a degree in Software Engineering. It was very interesting to study, we had courses on DBMS, software testing, algorithms, OOP and design patterns that' +
                 ' came in handy in my work. I love sports, cycling in the summer and snowboarding in the winter, it helps to keep fit and unload my head during hard work' +
@@ -155,9 +154,8 @@ export const multiLanguageTexts: MultiLanguageTexts = {
         },
         ru: {
             header: 'Обо мне',
-            mainData: 'Привет, я Вячеслав Колесников.\n ' +
-                'В текущий момент я FrontEnd разработчик в команде клиентского сервиса ПРОФИ. В своей карьере я прошел путь от младшего специалиста ' +
-                'по тестированию до Senior QA, а затем, сменив рельс, стал React-Native и React разработчиком. \n\n' +
+            mainData: 'Привет, я Вячеслав Колесников. В текущий момент я FrontEnd разработчик в команде клиентского сервиса ПРОФИ. В своей карьере я прошел путь от младшего специалиста ' +
+                'по тестированию до Senior QA, а затем, сменив рельс, стал React-Native и React разработчиком. \n' +
                 'Я закончил "Научно исследовательский университет Московский Институт Электронной ' +
                 'Техники" по специальности "Программная инженерия". Учиться было очень интересно, у нас были курсы по СУБД, тестированию ПО, алгоритмам, ООП и паттернам проектирования, которые ' +
                 'пригодились мне в работе.\n\n' +
@@ -173,7 +171,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 header: 'Testing',
                 mainData: "In 2017 I graduated from the university and got a job at Profi.ru as a junior " +
                     "testing specialist, in the future, leaving this position as a Senior QA. I joined the mobile development team and immediately got into work. The mentor quickly taught " +
-                    "me how to use Jira as a task and bug tracker, I began to closely engage in functional testing, regression testing, writing test cases and checklists. \n\n" +
+                    "me how to use Jira as a task and bug tracker, I began to closely engage in functional testing, regression testing, writing test cases and checklists. \n" +
                     "The company had a positive attitude towards employee initiatives, and due to the specialty of the sprints, I started to have free time, and my team lead and I decided to " +
                     "try to automate some of the regressions. From university, I had Java programming skills and the first version of automation was implemented on the BDD framework JBehave, " +
                     "and then, after reflecting on the results, we decided to switch to JS and WebdriverIO. As a result, we have reduced the time for regression testing of both platforms of " +
@@ -185,7 +183,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 header: 'Development',
                 mainData: "I have been developing mobile and web applications since 2019. I originally started as a React-Native developer. My team and I worked on a new application for executors, " +
                     "which replaced old Kotlin and Swift applications. I have solved many tasks of transferring functionality to a new platform and improving it: creating the client side of " +
-                    "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others.\n\n Over time, the company began to update the site for executors with " +
+                    "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others.\nOver time, the company began to update the site for executors with " +
                     "the subsequent transition to React, in which I also take an active part, developing not only visual components, but also low-level logic of the new orders board, " +
                     "including: the logic of universal pagination, return to the board page without reloading content, analytics of objects entering the viewport, and much more. \n\n" +
                     "Now I am a developer at PROFI, who is not afraid of new challenges and is always ready to learn.",
@@ -199,7 +197,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 header: 'Тестирование',
                 mainData: 'В 2017 году я закончил университет и устроился в ПРОФИ в качестве младшего специалиста по тестированию, ' +
                     'в будущем, покинув эту должность в качестве Senior QA. Я попал в команду мобильной разработки и сразу включился в работу. Ментор быстро научила меня пользоваться Jira в качестве таск и ' +
-                    'баг трекера, я начал плотно заниматься функциональным тестированием задач, регрессионным тестированием, составлением тест кейсов и чеклистов. \n\n' +
+                    'баг трекера, я начал плотно заниматься функциональным тестированием задач, регрессионным тестированием, составлением тест кейсов и чеклистов. \n' +
                     'Компания положительно относилась к инициативам работников, а из-за особенностей спринтов у меня начало появляться свободное время, и мы с моим тимлидом приняли решение предпринять попытку ' +
                     'автоматизации части регрессов. С университета у меня были навыки программирования на Java и первая версия автоматизации была реализована на BDD фреймворке JBehave, а затем, порефлексировав ' +
                     'над результатами мы решили перейти на JS и WebdriverIO. В итоге мы сократили время регрессионного тестирования обеих платформ мобильного приложения в команде с 1-2 дней до 4-6 часов.',
@@ -210,7 +208,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 header: 'Разработка',
                 mainData: "Я занимаюсь разработкой мобильных и Web приложений с 2019 года. Изначально я начал как React-Native разработчик. Мы с командой трудились над новым приложением для " +
                     "специалистов, которое пришло на замену старых приложений на Kotlin и Swift. Я решил много задач по переносу функционала на новую платформу и его усовершенствованию: " +
-                    "создание клиентской части фильтров для поиска нужных заказов, системы Cross-Sell, in-app уведомлений и многие другие.\n\n Со временем компания начала обновлять сайт для " +
+                    "создание клиентской части фильтров для поиска нужных заказов, системы Cross-Sell, in-app уведомлений и многие другие.\n Со временем компания начала обновлять сайт для " +
                     "специалистов с последующим переходом на React, в чем я так же принял активное участие, занявшись разработкой не только визуальных компонентов, но и низкоуровневой логики " +
                     "работы новой доски заказов, в том числе: логики универсальной пагинации, возврата на страницу доски без перезагрузки контента, аналитики попадания объектов во вьюпорт и многим другим. \n\n" +
                     "Сейчас я developer в ПРОФИ, который не боится новых вызовов и всегда готов учиться.",
