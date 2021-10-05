@@ -2,6 +2,7 @@ import React from "react";
 import {ContactsTexts, Images} from "../constants";
 import './ContactCard.css';
 import '../screen/Resume.css';
+import {revealedInViewport} from "../hocs/revealedInViewport";
 
 type Contact = {
     type: 'text' | 'link';
@@ -72,4 +73,4 @@ const ContactCard: React.FC<Props> = ({texts}) => {
     )
 };
 
-export default ContactCard;
+export default revealedInViewport<Props>('ContactCard')(ContactCard);

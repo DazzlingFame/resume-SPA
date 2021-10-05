@@ -4,13 +4,13 @@ import "./InfoBlock.css";
 import { ImageSource, InfoTexts } from "../constants";
 import { IS_MOBILE_LAYOUT_MEDIA, useMedia } from "../utils/useMedia";
 import {
+  Container,
   FullscreenPhoto,
   FullscreenPhotoContainer,
   Skills,
   TextBlocksContainer,
 } from "./InfoBlockComponents";
-import {ExpandableText} from "./ExpandableText";
-
+import { ExpandableText } from "./ExpandableText";
 type Props = {
   texts: InfoTexts;
   imageSource: ImageSource;
@@ -34,7 +34,7 @@ const InfoBlock: React.FC<Props> = (props) => {
   ));
 
   return (
-    <div className="info_block__container" key={props.imageSource.desc}>
+    <Container key={props.imageSource.desc}>
       <FullscreenPhotoContainer
         isActive={!!activeFullscreenPhoto}
         onClick={() => setActiveFullscreenPhoto(null)}
@@ -56,12 +56,17 @@ const InfoBlock: React.FC<Props> = (props) => {
           className="info_block__image"
         />
         <TextBlocksContainer>
-          <ExpandableText isInitiallyExpanded={!isMobile} text={props.texts.mainData} spoilerText={props.texts.continue} getSpoilerIndex={(text => text.indexOf('\n'))}/>
+          <ExpandableText
+            isInitiallyExpanded={!isMobile}
+            text={props.texts.mainData}
+            spoilerText={props.texts.continue}
+            getSpoilerIndex={(text) => text.indexOf("\n")}
+          />
           <Skills>{props.texts.skills}</Skills>
         </TextBlocksContainer>
       </div>
       <div className="flat_photo__container">{photos}</div>
-    </div>
+    </Container>
   );
 };
 

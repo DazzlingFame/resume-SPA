@@ -2,6 +2,7 @@ import '../screen/Resume.css'
 import * as React from "react";
 import {Images, InfoTexts} from "../constants";
 import InfoBlock from "./InfoBlock";
+import {revealedInViewport} from "../hocs/revealedInViewport";
 
 type Props = {
     texts: InfoTexts;
@@ -22,4 +23,4 @@ const AboutContent: React.FC<Props> = props => (
     </div>
 );
 
-export default AboutContent;
+export default revealedInViewport<Props>('AboutContent')(AboutContent);

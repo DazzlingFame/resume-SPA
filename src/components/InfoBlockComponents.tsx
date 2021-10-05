@@ -1,7 +1,14 @@
 import styled from "styled-components";
 import {smallTextStyles} from "../styledPresets";
 
-export const TextBlocksContainer = styled.div`
+export const Container = styled.div<TextBlocksContainerProps>`
+  padding: 20px 0;
+`;
+
+type TextBlocksContainerProps = {
+  isInViewport?: boolean;
+}
+export const TextBlocksContainer = styled.div<TextBlocksContainerProps>`
   display: flex;
   flex-direction: column;
 `;

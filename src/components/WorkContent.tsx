@@ -3,6 +3,7 @@ import "../screen/Resume.css";
 import "./WorkContent.css";
 import InfoBlock from "./InfoBlock";
 import { Images, WorkTexts } from "../constants";
+import {revealedInViewport} from "../hocs/revealedInViewport";
 
 const WORK_CONTENT_TYPE_KEY = "WORK_CONTENT_TYPE_KEY";
 
@@ -15,7 +16,7 @@ type Props = {
   texts: WorkTexts;
 };
 
-export const WorkContent: React.FC<Props> = (props) => {
+const WorkContent: React.FC<Props> = (props) => {
   const [content, setContent] = useState(
     localStorage.getItem(WORK_CONTENT_TYPE_KEY) || ContentType.TESTER
   );
@@ -88,3 +89,5 @@ export const WorkContent: React.FC<Props> = (props) => {
     </div>
   );
 };
+
+export default revealedInViewport<Props>('WorkContent')(WorkContent);

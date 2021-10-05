@@ -5,7 +5,7 @@ import {HeaderLinksText, MainTexts, multiLanguageTexts} from "../constants";
 import {SelectorItem} from "../components/Selector";
 import LanguageSelector from "../components/LanguageSelector";
 import AboutContent from "../components/AboutContent";
-import {WorkContent} from "../components/WorkContent";
+import WorkContent from "../components/WorkContent";
 import ContactCard from "../components/ContactCard";
 import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
 
@@ -84,13 +84,13 @@ export const Resume: React.FC = () => {
                         {mainTexts.welcome}
                     </span>
                     }
-                    <div ref={aboutRef}>
+                    <div className={'content_block'} ref={aboutRef}>
                         <AboutContent texts={getLocalisedTexts(multiLanguageTexts.aboutTexts, locale)}/>
                     </div>
-                    <div ref={workRef}>
+                    <div className={'content_block'} ref={workRef}>
                         <WorkContent texts={getLocalisedTexts(multiLanguageTexts.workTexts, locale)}/>
                     </div>
-                    <div ref={contactsRef}>
+                    <div className={'content_block'} ref={contactsRef}>
                         <ContactCard texts={contactsTexts}/>
                     </div>
                 </div>
