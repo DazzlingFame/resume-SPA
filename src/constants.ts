@@ -123,7 +123,7 @@ type MultiLanguageTexts = {
 export const multiLanguageTexts: MultiLanguageTexts = {
     mainTexts: {
         en: {
-            header: 'Slava. K',
+            header: 'Slava K.',
             headerLinks: {
                 work: 'Work',
                 about: 'About',
@@ -132,7 +132,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
             welcome: 'Welcome to my resume',
         },
         ru: {
-            header: 'Вячеслав. К',
+            header: 'Вячеслав К.',
             headerLinks: {
                 work: 'Работа',
                 about: 'Обо мне',
