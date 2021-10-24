@@ -1,6 +1,5 @@
 {
   "name": "resume-spa",
-  "homepage": "http://DazzlingFame.github.io/resume-spa",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -8,16 +7,19 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
+    "@types/lodash.throttle": "^4.1.1",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "5.1.4",
-    "styled-components": "5.2.1",
-    "@types/lodash.throttle": "^4.1.1",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "lodash.throttle": "^4.1.1",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "5.2.1",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
