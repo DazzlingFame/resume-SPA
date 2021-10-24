@@ -29,7 +29,7 @@
     "prettier": "^2.3.2"
   },
   "scripts": {
-    "start": "npm server.js",
+    "start": "node server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
