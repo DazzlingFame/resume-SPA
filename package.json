@@ -36,7 +36,7 @@
     "eject": "react-scripts eject",
     "redeps": "rm -rf node_modules && yarn",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "git push heroku master"
   },
   "eslintConfig": {
     "extends": [
