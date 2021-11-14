@@ -10,7 +10,7 @@ app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 
 //простой тест сервера
-app.get('/ping', function (req, res) {
+app.get('/api', function (req, res) {
     return res.send('pong');
 });
 

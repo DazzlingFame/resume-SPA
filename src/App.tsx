@@ -1,13 +1,18 @@
 import React from "react";
 
-import './css/variables.css'
-import './css/font.css'
-import {Resume} from "./screen/Resume";
+import "./css/variables.css";
+import "./css/font.css";
+import { Resume } from "./screen/Resume";
+import { Routes, Route } from "react-router-dom";
 
-
-function App () {
+function App() {
   return (
-      <Resume />
+      <Routes>
+        <Route
+          path="*"
+          element={<Resume />}
+        />
+      </Routes>
   );
 }
 
