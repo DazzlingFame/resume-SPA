@@ -12,6 +12,10 @@ function App() {
           path="*"
           element={<Resume />}
         />
+          <Route
+            path="qwe"
+            element={(<div>qwe</div>)}
+          />
       </Routes>
   );
 }
