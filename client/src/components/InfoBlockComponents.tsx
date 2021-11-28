@@ -3,6 +3,8 @@ import {smallTextStyles} from "../styledPresets";
 
 export const Container = styled.div<TextBlocksContainerProps>`
   padding: 20px 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 type TextBlocksContainerProps = {

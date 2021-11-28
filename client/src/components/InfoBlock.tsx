@@ -11,6 +11,7 @@ import {
   TextBlocksContainer,
 } from "./InfoBlockComponents";
 import { ExpandableText } from "./ExpandableText";
+import PreviewGallery from "./previewGallery";
 type Props = {
   texts: InfoTexts;
   imageSource: ImageSource;
@@ -65,7 +66,10 @@ const InfoBlock: React.FC<Props> = (props) => {
           <Skills>{props.texts.skills}</Skills>
         </TextBlocksContainer>
       </div>
-      <div className="flat_photo__container">{photos}</div>
+      {isMobile
+          ? <PreviewGallery id={`${props.texts.mainData.substr(0, 10)}_gallery`} photoSources={props.photos.map(photo => photo.source)}/>
+          : <div className="flat_photo__container">{photos}</div>
+      }
     </Container>
   );
 };
