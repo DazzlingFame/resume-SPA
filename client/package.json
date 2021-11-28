@@ -1,5 +1,6 @@
 {
   "name": "resume-spa",
+  "homepage": "http://DazzlingFame.github.io/resume-spa",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -35,7 +36,8 @@
     "eject": "react-scripts eject",
     "redeps": "rm -rf node_modules && yarn",
     "predeploy": "npm run build",
-    "deploy": "git push heroku master"
+    "deploy_gh": "gh-pages -d build",
+    "deploy_heroku": "git push heroku master"
   },
   "eslintConfig": {
     "extends": [
@@ -54,5 +56,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8000/"
 }

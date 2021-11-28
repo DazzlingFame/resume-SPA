@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "cd client; yarn predeploy; cd ../server; node index.js",
+    "start": "cd client; yarn start",
+    "start_server": "cd client; yarn predeploy; cd ../server; node index.js",
     "client": "cd client; yarn start",
     "build": "cd client; yarn install; yarn build; cd ../server; yarn install; cd ..",
     "predeploy": "cd /client; npm run build; cd ..",
