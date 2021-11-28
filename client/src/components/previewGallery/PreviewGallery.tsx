@@ -4,7 +4,7 @@ import PreviewPhoto from './PreviewPhoto';
 import Indicator from './Indicator';
 import {PREVIEW_ASPECT_RATIO} from "./utils";
 
-const GALLERY_WIDTH_MOBILE = document.documentElement.clientWidth - 32 - 16;
+const GALLERY_WIDTH_MOBILE = document.documentElement.clientWidth * 0.95;
 
 const getSectionOffsetByScroll = (
   scrollOffset: number,
