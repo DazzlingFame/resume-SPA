@@ -74,7 +74,9 @@
 }
 
 .navigation_link_container {
+    border-radius: 12px 12px 0 0;
     padding: 4px 24px;
+    cursor: pointer;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
@@ -88,7 +90,7 @@
 }
 
 .navigation_link_container:hover {
-    background-color: rgba(40, 40, 40, 0.2);
+    background-color: var(--primaryLight);
 }
 
 .small_text {
@@ -113,9 +115,10 @@
 .flat_photo__item {
     max-width: 30%;
     max-height: 400px;
-    padding: 10px;
+    margin: 10px;
     user-select: none;
     object-fit: contain;
+    cursor: pointer;
 }
 
 @media all and (max-width: 980px) {

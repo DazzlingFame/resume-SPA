@@ -8,8 +8,8 @@ import {revealedInViewport} from "../hocs/revealedInViewport";
 const WORK_CONTENT_TYPE_KEY = "WORK_CONTENT_TYPE_KEY";
 
 enum ContentType {
-  TESTER = "Tablio",
-  DEVELOPER = "PhotoEditing",
+  TESTER = "TESTER",
+  DEVELOPER = "DEVELOPER",
 }
 
 type Props = {
@@ -45,11 +45,11 @@ const WorkContent: React.FC<Props> = (props) => {
     </div>
   ));
 
-  let contentComponents;
+  let contentComponent;
 
   switch (content) {
     case ContentType.DEVELOPER: {
-      contentComponents = (
+      contentComponent = (
         <InfoBlock
           key="work"
           texts={props.texts.development}
@@ -64,7 +64,7 @@ const WorkContent: React.FC<Props> = (props) => {
       break;
     }
     case ContentType.TESTER: {
-      contentComponents = (
+      contentComponent = (
         <InfoBlock
           key="testing"
           texts={props.texts.testing}
@@ -84,7 +84,7 @@ const WorkContent: React.FC<Props> = (props) => {
         <div className={"divider"} />
       </div>
       <div className={"content_container"}>
-        {contentComponents}
+        {contentComponent}
       </div>
     </div>
   );

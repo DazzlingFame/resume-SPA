@@ -3,8 +3,9 @@ import {ScrollablePhotoContainer, Container} from './PreviewGalleryStyles';
 import PreviewPhoto from './PreviewPhoto';
 import Indicator from './Indicator';
 import {PREVIEW_ASPECT_RATIO} from "./utils";
+import {getWidth} from "../../utils/global";
 
-const GALLERY_WIDTH_MOBILE = document.documentElement.clientWidth * 0.95;
+const GALLERY_WIDTH_MOBILE = getWidth() * 0.9;
 
 const getSectionOffsetByScroll = (
   scrollOffset: number,
@@ -45,7 +46,7 @@ const PreviewGallery: React.FC<Props> = ({id, photoSources}) => {
         );
       });
     });
-  }, [id, galleryWidth, indicatorWidth]);
+  }, [id, galleryWidth, indicatorWidth, indicatorWidthWithPaddings]);
 
   return (
     <Container height={galleryHeight} width={galleryWidth}>
