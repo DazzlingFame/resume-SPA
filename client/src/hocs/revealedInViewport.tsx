@@ -8,7 +8,7 @@ type RevealableProps = {
 };
 export const Revealable = styled.div<RevealableProps>`
   opacity: ${(props) => (props.isInViewport ? 1 : 0)};
-  transition: opacity 1000ms;
+  transition: opacity 700ms;
 `;
 
 export const revealedInViewport = <P extends object>

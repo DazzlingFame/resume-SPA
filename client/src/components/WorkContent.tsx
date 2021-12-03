@@ -18,7 +18,7 @@ type Props = {
 
 const WorkContent: React.FC<Props> = (props) => {
   const [content, setContent] = useState(
-    localStorage.getItem(WORK_CONTENT_TYPE_KEY) || ContentType.TESTER
+    localStorage.getItem(WORK_CONTENT_TYPE_KEY) || ContentType.DEVELOPER
   );
 
   const navigationConfig: Array<{ text: string; type: ContentType }> = [

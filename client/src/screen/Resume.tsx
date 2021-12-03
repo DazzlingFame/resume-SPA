@@ -20,13 +20,13 @@ export const Resume: React.FC = () => {
 
     const getHeaderLinksConfig = ({work, about, contacts}: HeaderLinksText) => ([
         {
-            text: about, onClick: () => {
-                aboutRef?.current && aboutRef.current.scrollIntoView({behavior: "smooth", block: "start"});
+            text: work, onClick: () => {
+                workRef?.current && workRef.current.scrollIntoView({behavior: "smooth", block: "start"});
             }
         },
         {
-            text: work, onClick: () => {
-                workRef?.current && workRef.current.scrollIntoView({behavior: "smooth", block: "start"});
+            text: about, onClick: () => {
+                aboutRef?.current && aboutRef.current.scrollIntoView({behavior: "smooth", block: "start"});
             }
         },
         {
@@ -84,11 +84,11 @@ export const Resume: React.FC = () => {
                         {mainTexts.welcome}
                     </span>
                     }
-                    <div className={'content_block'} ref={aboutRef}>
-                        <AboutContent texts={getLocalisedTexts(multiLanguageTexts.aboutTexts, locale)}/>
-                    </div>
                     <div className={'content_block'} ref={workRef}>
                         <WorkContent texts={getLocalisedTexts(multiLanguageTexts.workTexts, locale)}/>
+                    </div>
+                    <div className={'content_block'} ref={aboutRef}>
+                        <AboutContent texts={getLocalisedTexts(multiLanguageTexts.aboutTexts, locale)}/>
                     </div>
                     <div className={'content_block'} ref={contactsRef}>
                         <ContactCard texts={contactsTexts}/>
