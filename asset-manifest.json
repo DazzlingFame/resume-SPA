@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/resume-spa/static/css/main.b0505afe.chunk.css",
-    "main.js": "/resume-spa/static/js/main.a0056fc8.chunk.js",
-    "main.js.map": "/resume-spa/static/js/main.a0056fc8.chunk.js.map",
+    "main.css": "/resume-spa/static/css/main.849f7233.chunk.css",
+    "main.js": "/resume-spa/static/js/main.93dad203.chunk.js",
+    "main.js.map": "/resume-spa/static/js/main.93dad203.chunk.js.map",
     "runtime-main.js": "/resume-spa/static/js/runtime-main.9c292f18.js",
     "runtime-main.js.map": "/resume-spa/static/js/runtime-main.9c292f18.js.map",
     "static/js/2.8ce45cb1.chunk.js": "/resume-spa/static/js/2.8ce45cb1.chunk.js",
     "static/js/2.8ce45cb1.chunk.js.map": "/resume-spa/static/js/2.8ce45cb1.chunk.js.map",
     "index.html": "/resume-spa/index.html",
-    "static/css/main.b0505afe.chunk.css.map": "/resume-spa/static/css/main.b0505afe.chunk.css.map",
+    "static/css/main.849f7233.chunk.css.map": "/resume-spa/static/css/main.849f7233.chunk.css.map",
     "static/js/2.8ce45cb1.chunk.js.LICENSE.txt": "/resume-spa/static/js/2.8ce45cb1.chunk.js.LICENSE.txt",
     "static/media/font.css": "/resume-spa/static/media/Rubik-Regular.37a4d906.ttf",
     "static/media/about-me-photo.4a990486.jpg": "/resume-spa/static/media/about-me-photo.4a990486.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.9c292f18.js",
     "static/js/2.8ce45cb1.chunk.js",
-    "static/css/main.b0505afe.chunk.css",
-    "static/js/main.a0056fc8.chunk.js"
+    "static/css/main.849f7233.chunk.css",
+    "static/js/main.93dad203.chunk.js"
   ]
 }
