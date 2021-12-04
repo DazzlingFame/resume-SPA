@@ -84,13 +84,13 @@ export const Resume: React.FC = () => {
                         {mainTexts.welcome}
                     </span>
                     }
-                    <div className={'content_block'} ref={workRef}>
+                    <div ref={workRef}>
                         <WorkContent texts={getLocalisedTexts(multiLanguageTexts.workTexts, locale)}/>
                     </div>
-                    <div className={'content_block'} ref={aboutRef}>
+                    <div ref={aboutRef}>
                         <AboutContent texts={getLocalisedTexts(multiLanguageTexts.aboutTexts, locale)}/>
                     </div>
-                    <div className={'content_block'} ref={contactsRef}>
+                    <div ref={contactsRef}>
                         <ContactCard texts={contactsTexts}/>
                     </div>
                 </div>

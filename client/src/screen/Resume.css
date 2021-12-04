@@ -11,8 +11,6 @@
     display: flex;
     padding: 20px 5%;
     flex-direction: column;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 .content_block {
@@ -61,6 +59,13 @@
 .header_link_container {
     margin-right: 16px;
     color: var(--secondaryColor);
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.header_link_container:hover {
+    background-color: var(--primaryColor);
 }
 
 .navigation_container {
@@ -90,7 +95,7 @@
 }
 
 .navigation_link_container:hover {
-    background-color: var(--primaryLight);
+    background-color: var(--primaryColor);
 }
 
 .small_text {
