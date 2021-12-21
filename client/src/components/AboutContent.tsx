@@ -1,7 +1,7 @@
 import '../screen/Resume.css'
 import * as React from "react";
 import {Images, InfoTexts} from "../constants";
-import InfoBlock from "./InfoBlock";
+import InfoBlock from "./infoBlock";
 import {revealedInViewport} from "../hocs/revealedInViewport";
 
 type Props = {

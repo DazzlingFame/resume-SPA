@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import "../screen/Resume.css";
-import "./InfoBlock.css";
-import { ImageSource, InfoTexts } from "../constants";
-import { IS_MOBILE_LAYOUT_MEDIA, useMedia } from "../utils/useMedia";
+import { ImageSource, InfoTexts } from "../../constants";
+import { IS_MOBILE_LAYOUT_MEDIA, useMedia } from "../../utils/useMedia";
 import {
   Container,
+  DesktopPhoto,
+  FlatGallery,
   FullscreenPhoto,
   FullscreenPhotoContainer,
+  HeaderContainer,
+  InfoBlockImage,
   Skills,
   TextBlocksContainer,
-} from "./InfoBlockComponents";
-import { ExpandableText } from "./ExpandableText";
-import PreviewGallery from "./previewGallery";
+} from "./InfoBlockStyles";
+import { ExpandableText } from "../ExpandableText";
+import PreviewGallery from "../previewGallery";
 type Props = {
   texts: InfoTexts;
   imageSource: ImageSource;
@@ -25,12 +27,11 @@ const InfoBlock: React.FC<Props> = (props) => {
     desc: string;
   } | null>(null);
   const photos = props.photos.map((photo) => (
-    <img
+    <DesktopPhoto
       onClick={() => !isMobile && setActiveFullscreenPhoto(photo)}
       key={photo.desc}
       src={photo.source}
       alt={photo.desc}
-      className="flat_photo__item"
     />
   ));
 
@@ -47,14 +48,10 @@ const InfoBlock: React.FC<Props> = (props) => {
           alt={activeFullscreenPhoto?.desc}
         />
       </FullscreenPhotoContainer>
-      <div
-        className="header_container"
-        key={`${props.imageSource.desc}_container`}
-      >
-        <img
+      <HeaderContainer key={`${props.imageSource.desc}_container`}>
+        <InfoBlockImage
           src={props.imageSource.source}
           alt={props.imageSource.desc}
-          className="info_block__image"
         />
         <TextBlocksContainer>
           <ExpandableText
@@ -65,11 +62,15 @@ const InfoBlock: React.FC<Props> = (props) => {
           />
           <Skills>{props.texts.skills}</Skills>
         </TextBlocksContainer>
-      </div>
-      {isMobile
-          ? <PreviewGallery id={`${props.texts.mainData.substr(0, 10)}_gallery`} photoSources={props.photos.map(photo => photo.source)}/>
-          : <div className="flat_photo__container">{photos}</div>
-      }
+      </HeaderContainer>
+      {isMobile ? (
+        <PreviewGallery
+          id={`${props.texts.mainData.substr(0, 10)}_gallery`}
+          photoSources={props.photos.map((photo) => photo.source)}
+        />
+      ) : (
+        <FlatGallery>{photos}</FlatGallery>
+      )}
     </Container>
   );
 };

@@ -18,9 +18,7 @@ export const ContactItemIcon = styled.img`
 
 export const ContactItemText = styled.span`
   @media all and (max-width: 980px) {
-    .contact_card__contact_item__text {
-      display: none;
-    }
+    display: none;
   }
 `;
 

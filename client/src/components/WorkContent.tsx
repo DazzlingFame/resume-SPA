@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../screen/Resume.css";
 import "./WorkContent.css";
-import InfoBlock from "./InfoBlock";
+import InfoBlock from "./infoBlock";
 import { Images, WorkTexts } from "../constants";
 import {revealedInViewport} from "../hocs/revealedInViewport";
 

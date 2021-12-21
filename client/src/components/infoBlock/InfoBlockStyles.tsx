@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {smallTextStyles} from "../styledPresets";
+import { smallTextStyles } from "../../styledPresets";
 
 export const Container = styled.div<TextBlocksContainerProps>`
   padding: 20px 0;
@@ -9,7 +9,7 @@ export const Container = styled.div<TextBlocksContainerProps>`
 
 type TextBlocksContainerProps = {
   isInViewport?: boolean;
-}
+};
 export const TextBlocksContainer = styled.div<TextBlocksContainerProps>`
   display: flex;
   flex-direction: column;
@@ -49,4 +49,46 @@ export const FullscreenPhoto = styled.img<FullscreenPhotoProps>`
         height: 80%;
   `};
   transition: height 300ms;
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  @media all and (max-width: 980px) {
+    flex-direction: column;
+  }
+`;
+
+export const InfoBlockImage = styled.img`
+  width: 200px;
+  height: 200px;
+  margin-right: 5%;
+  object-fit: cover;
+  border-radius: 99em;
+  @media all and (max-width: 980px) {
+    margin-bottom: 5%;
+  }
+`;
+
+export const DesktopPhoto = styled.img`
+  max-width: 30%;
+  max-height: 400px;
+  margin: 10px;
+  user-select: none;
+  object-fit: contain;
+  cursor: pointer;
+
+  @media all and (max-width: 980px) {
+    max-height: 355px;
+    max-width: 355px;
+  }
+`;
+
+export const FlatGallery = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 `;
