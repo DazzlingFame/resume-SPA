@@ -6,7 +6,7 @@ import {SelectorItem} from "../components/Selector";
 import LanguageSelector from "../components/LanguageSelector";
 import AboutContent from "../components/AboutContent";
 import WorkContent from "../components/WorkContent";
-import ContactCard from "../components/ContactCard";
+import ContactCard from "../components/contactCard";
 import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
 
 

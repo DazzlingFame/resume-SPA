@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { boldSubheaderTextStyles, regularText } from "../styledPresets";
+import { boldSubheaderTextStyles, regularText } from "../../styledPresets";
 
 export const ContactItemContainer = styled.a`
   display: inline-flex;
