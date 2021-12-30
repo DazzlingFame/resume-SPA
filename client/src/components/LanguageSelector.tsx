@@ -1,6 +1,7 @@
 import React from "react";
 import {LocaleEnum} from "../utils/localisation";
-import Selector, {SelectorItem} from "./Selector";
+import Selector from "./selector";
+import {SelectorItem} from "./selector/SelectorComponent";
 
 type Props = {
     initialState?: LocaleEnum;
