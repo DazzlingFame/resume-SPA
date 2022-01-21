@@ -8,6 +8,7 @@ import {
   SelectorItemsContainer,
   SelectorItemText,
 } from "./SelectorStyles";
+import useOutsideClickHandler from "../../utils/outsideClickHandler";
 
 export type SelectorItem = {
   code: string;
@@ -25,12 +26,16 @@ const SelectorComponent: React.FC<Props> = ({
   items,
   onStateChanged,
 }) => {
+  const containerRef = React.createRef<HTMLDivElement>();
   const [currentState, setCurrentState] = useState<SelectorItem>(
     initialStateCode
       ? items.find((item) => item.code === initialStateCode) ?? items[0]
       : items[0]
   );
   const [isSelectorVisible, setIsSelectorVisible] = useState<boolean>(false);
+
+  useOutsideClickHandler(containerRef, () => setIsSelectorVisible(false));
+
   const toggleItems = items.map((toggleState) => (
     <SelectorItemContainer
       onClick={() => {
@@ -47,7 +52,7 @@ const SelectorComponent: React.FC<Props> = ({
     setIsSelectorVisible(!isSelectorVisible);
 
   return (
-    <SelectorContainer>
+    <SelectorContainer ref={containerRef}>
       <SelectedItemContainer onClick={changeIsSelectorVisibleState}>
         <SelectedItemText>{currentState.text}</SelectedItemText>
         <SelectorChevron />
