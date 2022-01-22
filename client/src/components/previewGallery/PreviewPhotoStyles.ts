@@ -21,6 +21,7 @@ export const Container = styled.div<SizeProps>`
   width: ${props => props.width}px;
   height: ${props => props.height}px;
   scroll-snap-align: start;
+  user-select: none;
 `;
 
 type ThumbnailProps = SizeProps & {isBlurred?: boolean;};
