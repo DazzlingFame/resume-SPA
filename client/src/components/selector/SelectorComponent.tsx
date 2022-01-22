@@ -8,7 +8,7 @@ import {
   SelectorItemsContainer,
   SelectorItemText,
 } from "./SelectorStyles";
-import useOutsideClickHandler from "../../utils/outsideClickHandler";
+import useOutsideClickHandler from "../../utils/useOutsideClickHandler";
 
 export type SelectorItem = {
   code: string;
