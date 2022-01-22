@@ -77,7 +77,7 @@ const WorkContent: React.FC<Props> = (props) => {
   }
 
   return (
-    <div>
+    <>
       <p className={"bold_subheader_text"}>{props.texts.header}</p>
       <div className={"navigation_container"}>
         <div className={"navigation_links_container"}>{navigationLinks}</div>
@@ -86,7 +86,7 @@ const WorkContent: React.FC<Props> = (props) => {
       <div className={"content_container"}>
         {contentComponent}
       </div>
-    </div>
+    </>
   );
 };
 

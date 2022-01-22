@@ -11,7 +11,7 @@ type Props = {
 const photosArray = [Images.BICYCLE_IMG, Images.WARHAMMER_IMG, Images.SHIVA_IMG];
 
 const AboutContent: React.FC<Props> = props => (
-    <div>
+    <>
         {!!props.texts.header &&
             (
                 <p className={'bold_subheader_text'}>
@@ -20,7 +20,7 @@ const AboutContent: React.FC<Props> = props => (
             )
         }
         <InfoBlock photos={photosArray} texts={props.texts} imageSource={Images.ABOUT_ME_IMG}/>
-    </div>
+    </>
 );
 
 export default revealedInViewport<Props>('AboutContent')(AboutContent);
