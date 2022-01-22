@@ -126,7 +126,7 @@
     cursor: pointer;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 920px) {
     .bold_header_text {
         font-size: var(--header-mobile);
     }

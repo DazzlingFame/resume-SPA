@@ -14,14 +14,7 @@ export function useMedia(mediaQuery: MediaQueryList): boolean {
     return isMatches;
 }
 
-export const CSS_LAYOUT_MOBILE_TO_DESKTOP_BOUNDARY = 980;
-export const CSS_DESKTOP_WIDTH = 1280;
-export const CSS_TABLET_WIDTH = 1020;
-export const CSS_MOBILE_WIDTH = 720;
-
-export const LESS_THEN_MOBILE_MEDIA = window.matchMedia(
-    `all and (max-width: ${CSS_MOBILE_WIDTH}px)`,
-);
+export const CSS_LAYOUT_MOBILE_TO_DESKTOP_BOUNDARY = 920;
 
 export const IS_MOBILE_LAYOUT_MEDIA = window.matchMedia(
     `all and (max-width: ${CSS_LAYOUT_MOBILE_TO_DESKTOP_BOUNDARY}px)`,
