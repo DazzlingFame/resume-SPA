@@ -10,6 +10,7 @@ import {
   HeaderContainer,
   InfoBlockImage,
   Skills,
+  ParallaxImageContainer,
   TextBlocksContainer,
 } from "./InfoBlockStyles";
 import { ExpandableText } from "../ExpandableText";
@@ -49,10 +50,12 @@ const InfoBlock: React.FC<Props> = (props) => {
         />
       </FullscreenPhotoContainer>
       <HeaderContainer key={`${props.imageSource.desc}_container`}>
-        <InfoBlockImage
-          src={props.imageSource.source}
-          alt={props.imageSource.desc}
-        />
+        <ParallaxImageContainer>
+          <InfoBlockImage
+            src={props.imageSource.source}
+            alt={props.imageSource.desc}
+          />
+        </ParallaxImageContainer>
         <TextBlocksContainer>
           <ExpandableText
             isInitiallyExpanded={!isMobile}

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { smallTextStyles } from "../../styledPresets";
+import Parallax from "../parallax";
 
 export const Container = styled.div<TextBlocksContainerProps>`
   padding: 20px 0;
@@ -61,11 +62,18 @@ export const HeaderContainer = styled.div`
 `;
 
 export const InfoBlockImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const ParallaxImageContainer = styled(Parallax)`
+  display: flex;
+  flex-shrink: 0;
   width: 200px;
   height: 200px;
   margin-right: 5%;
-  object-fit: cover;
-  border-radius: 99em;
+  border-radius: 100px;
   @media all and (max-width: 980px) {
     margin-bottom: 5%;
   }
