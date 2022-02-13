@@ -8,6 +8,7 @@ import WorkContent from "../components/WorkContent";
 import ContactCard from "../components/contactCard";
 import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
 import {SelectorItem} from "../components/selector/SelectorComponent";
+import PageScrollProgressBar from "../components/pageScrollProgressBar";
 
 
 export const Resume: React.FC = () => {
@@ -63,6 +64,7 @@ export const Resume: React.FC = () => {
         return (
             <div className={'root_container'}>
                 <div className={'container'}>
+                    <PageScrollProgressBar />
                     <div className={'nav_header_container'}>
                         <div>
                              <span className={'nav_header_text'}>
