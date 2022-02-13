@@ -18,7 +18,10 @@ export const BottomLayer = styled.div.attrs<LayerProps>(
   })
 )<LayerProps>`
   position: absolute;
-  inset: ${props => -props.inset}px;
+  top: ${(props) => -props.inset}px;
+  bottom: ${(props) => -props.inset}px;
+  left: ${(props) => -props.inset}px;
+  right: ${(props) => -props.inset}px;
 `;
 
 export const TopLayer = styled.div.attrs<LayerProps>(
@@ -29,5 +32,8 @@ export const TopLayer = styled.div.attrs<LayerProps>(
   })
 )<LayerProps>`
   position: absolute;
-  inset: ${props => -props.inset}px;
+  top: ${(props) => -props.inset}px;
+  bottom: ${(props) => -props.inset}px;
+  left: ${(props) => -props.inset}px;
+  right: ${(props) => -props.inset}px;
 `;

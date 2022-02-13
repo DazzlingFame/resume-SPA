@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { smallTextStyles } from "../../styledPresets";
-import Parallax from "../parallax";
+import {ScrollParallax} from "../parallax";
 
 export const Container = styled.div<TextBlocksContainerProps>`
   padding: 20px 0;
@@ -67,7 +67,7 @@ export const InfoBlockImage = styled.img`
   object-fit: cover;
 `;
 
-export const ParallaxImageContainer = styled(Parallax)`
+export const ParallaxImageContainer = styled(ScrollParallax)`
   display: flex;
   flex-shrink: 0;
   width: 200px;
