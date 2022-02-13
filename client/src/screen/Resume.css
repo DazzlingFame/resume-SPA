@@ -5,12 +5,14 @@
     width: 100%;
     min-width: 375px;
     background-color: var(--primaryDark);
+    align-items: center;
 }
 
 .container {
     display: flex;
     padding: 20px 5%;
     flex-direction: column;
+    max-width: 1200px;
 }
 
 .content_block {
