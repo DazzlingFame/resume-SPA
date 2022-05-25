@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../screen/Resume.css";
 import "./WorkContent.css";
 import InfoBlock from "./infoBlock";
-import { Images, WorkTexts } from "../constants";
+import {Images, WorkTexts} from "../constants";
 import {revealedInViewport} from "../hocs/revealedInViewport";
 
 const WORK_CONTENT_TYPE_KEY = "WORK_CONTENT_TYPE_KEY";
@@ -14,16 +14,17 @@ enum ContentType {
 
 type Props = {
   texts: WorkTexts;
+  containerRef: React.RefObject<HTMLDivElement>;
 };
 
-const WorkContent: React.FC<Props> = (props) => {
+const WorkContent: React.FC<Props> = ({ texts, containerRef }) => {
   const [content, setContent] = useState(
     localStorage.getItem(WORK_CONTENT_TYPE_KEY) || ContentType.DEVELOPER
   );
 
   const navigationConfig: Array<{ text: string; type: ContentType }> = [
-    { text: props.texts.testing.header, type: ContentType.TESTER },
-    { text: props.texts.development.header, type: ContentType.DEVELOPER },
+    { text: texts.testing.header, type: ContentType.TESTER },
+    { text: texts.development.header, type: ContentType.DEVELOPER },
   ];
 
   const onContentTabChanged = (type: ContentType) => {
@@ -52,7 +53,7 @@ const WorkContent: React.FC<Props> = (props) => {
       contentComponent = (
         <InfoBlock
           key="work"
-          texts={props.texts.development}
+          texts={texts.development}
           photos={[
             Images.ORDERS_MAP_IMG,
             Images.DLIMS_IMG,
@@ -67,7 +68,7 @@ const WorkContent: React.FC<Props> = (props) => {
       contentComponent = (
         <InfoBlock
           key="testing"
-          texts={props.texts.testing}
+          texts={texts.testing}
           photos={[Images.ALLURE_IMG, Images.E2E_STEP_IMG]}
           imageSource={Images.WORK_ME_IMG}
         />
@@ -77,17 +78,15 @@ const WorkContent: React.FC<Props> = (props) => {
   }
 
   return (
-    <>
-      <p className={"bold_subheader_text"}>{props.texts.header}</p>
+    <div ref={containerRef}>
+      <p className={"bold_subheader_text"}>{texts.header}</p>
       <div className={"navigation_container"}>
         <div className={"navigation_links_container"}>{navigationLinks}</div>
         <div className={"divider"} />
       </div>
-      <div className={"content_container"}>
-        {contentComponent}
-      </div>
-    </>
+      <div className={"content_container"}>{contentComponent}</div>
+    </div>
   );
 };
 
-export default revealedInViewport<Props>('WorkContent')(WorkContent);
+export default revealedInViewport<Props>("WorkContent")(WorkContent);

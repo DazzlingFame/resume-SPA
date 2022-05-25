@@ -19,3 +19,7 @@ export const CSS_LAYOUT_MOBILE_TO_DESKTOP_BOUNDARY = 920;
 export const IS_MOBILE_LAYOUT_MEDIA = window.matchMedia(
     `all and (max-width: ${CSS_LAYOUT_MOBILE_TO_DESKTOP_BOUNDARY}px)`,
 );
+
+export const cssMedia = {
+    mobile: `@media all and (max-width: ${CSS_LAYOUT_MOBILE_TO_DESKTOP_BOUNDARY}px)`,
+};

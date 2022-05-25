@@ -16,9 +16,10 @@ import { CONTACTS_DATA } from "./constants";
 
 type Props = {
   texts: ContactsTexts;
+  containerRef: React.RefObject<HTMLDivElement>;
 };
 
-const ContactCardComponent: React.FC<Props> = ({ texts }) => {
+const ContactCardComponent: React.FC<Props> = ({ texts, containerRef }) => {
   const contactItems = CONTACTS_DATA.map((item) => (
     <ContactItemContainer key={item.link} href={item.link}>
       <ContactItemIcon src={item.img} alt={item.text} />
@@ -27,7 +28,7 @@ const ContactCardComponent: React.FC<Props> = ({ texts }) => {
   ));
 
   return (
-    <ContactBlockContainer>
+    <ContactBlockContainer ref={containerRef}>
       <ContactBlockHeader>{texts.header}</ContactBlockHeader>
       <ContactCardContainer>
         <ContactSideContainer>
