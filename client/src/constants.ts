@@ -16,6 +16,7 @@ import ordersMapPhoto from './assets/images/map-photo.png'
 import dlims from './assets/images/dlims-photo.png'
 import e2eStep from './assets/images/e2e-step-def.png'
 import ordersBoard from './assets/images/orders-board.png'
+import underDog from './assets/images/under-dog.gif';
 
 export type ImageSource = {
     source: string;
@@ -80,7 +81,10 @@ export const Images: Record<string, ImageSource> = {
     },
     ORDERS_BOARD: {
         source: ordersBoard, desc: 'orders_board'
-    }
+    },
+    UNDER_DOG: {
+        source: underDog, desc: 'undertale_dog_gif'
+    },
 };
 
 export type HeaderLinksText = {
