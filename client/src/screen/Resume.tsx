@@ -1,4 +1,4 @@
-import React, {createRef, useState} from "react";
+import React, { createRef, useState } from "react";
 import "./Resume.css";
 import {
   getLocaleFromStorage,
@@ -6,21 +6,15 @@ import {
   LocaleEnum,
   setLocaleToStorage,
 } from "../utils/localisation";
-import {HeaderLinksText, MainTexts, multiLanguageTexts} from "../constants";
-import LanguageSelector from "../components/LanguageSelector";
+import { MainTexts, multiLanguageTexts } from "../constants";
 import AboutContent from "../components/AboutContent";
 import WorkContent from "../components/WorkContent";
 import ContactCard from "../components/contactCard";
-import {IS_MOBILE_LAYOUT_MEDIA, useMedia} from "../utils/useMedia";
-import {SelectorItem} from "../components/selector/SelectorComponent";
+import { IS_MOBILE_LAYOUT_MEDIA, useMedia } from "../utils/useMedia";
+import { SelectorItem } from "../components/selector/SelectorComponent";
 import PageScrollProgressBar from "../components/pageScrollProgressBar";
-import {
-  Container,
-  HeaderContainer,
-  NavigationContainer,
-  NavigationLinkContainer,
-  RootContainer,
-} from "./ResumeStyles";
+import { Container, HeaderContainer, RootContainer } from "./ResumeStyles";
+import { Navigation } from "../components/Navigation";
 
 export const Resume: React.FC = () => {
   const workRef = createRef<HTMLDivElement>();
@@ -28,39 +22,6 @@ export const Resume: React.FC = () => {
   const contactsRef = createRef<HTMLDivElement>();
   const [locale, setLocale] = useState(getLocaleFromStorage());
   const isMobile = useMedia(IS_MOBILE_LAYOUT_MEDIA);
-
-  const getHeaderLinksConfig = ({ work, about, contacts }: HeaderLinksText) => [
-    {
-      text: work,
-      onClick: () => {
-        workRef?.current &&
-          workRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-      },
-    },
-    {
-      text: about,
-      onClick: () => {
-        aboutRef?.current &&
-          aboutRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-      },
-    },
-    {
-      text: contacts,
-      onClick: () => {
-        contactsRef?.current &&
-          contactsRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-      },
-    },
-  ];
 
   const onLanguageChanged = (pickedState: SelectorItem) => {
     switch (pickedState.code) {
@@ -84,14 +45,6 @@ export const Resume: React.FC = () => {
     locale
   );
 
-  const headerLinks = getHeaderLinksConfig(mainTexts.headerLinks).map(
-    (item) => (
-      <NavigationLinkContainer onClick={item.onClick} key={item.text}>
-        <span className={"regular_text"}>{item.text}</span>
-      </NavigationLinkContainer>
-    )
-  );
-
   return (
     <RootContainer>
       <Container>
@@ -103,13 +56,14 @@ export const Resume: React.FC = () => {
               <p className={"bold_header_text"}>{mainTexts.welcome}</p>
             )}
           </div>
-          <NavigationContainer>
-            {headerLinks}
-            <LanguageSelector
-              initialState={locale}
-              onStateChanged={onLanguageChanged}
-            />
-          </NavigationContainer>
+          <Navigation
+            navigationItems={[
+              { title: mainTexts.headerLinks.work, ref: workRef },
+              { title: mainTexts.headerLinks.about, ref: aboutRef },
+              { title: mainTexts.headerLinks.contacts, ref: contactsRef },
+            ]}
+            onLanguageChanged={onLanguageChanged}
+          />
         </HeaderContainer>
         {!isMobile && (
           <span className={"bold_header_text"}>{mainTexts.welcome}</span>
