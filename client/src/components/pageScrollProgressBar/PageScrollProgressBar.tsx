@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { getHeight } from "../../utils/global";
 import styled from "styled-components";
-import {COLORS, Images} from "../../constants";
+import { COLORS, Images } from "../../constants";
+import debounce from "lodash.debounce";
 
 type BarProps = {
   widthPercents: number;
@@ -28,9 +29,16 @@ const Doge = styled.img`
 
 const PageScrollProgressBar: React.FC = () => {
   const [scrollPercentState, setScrollPercentState] = useState(0);
+  const [dogMoving, setDogMoving] = useState(false);
+  const setDogStaticDebounced = useCallback(
+    debounce(() => setDogMoving(false), 200),
+    []
+  );
 
   useEffect(() => {
     const scrollListener = () => {
+      setDogMoving(true);
+      setDogStaticDebounced();
       window.requestAnimationFrame(() => {
         setScrollPercentState(
           (window.scrollY / (getHeight() - window.innerHeight)) * 100
@@ -43,9 +51,13 @@ const PageScrollProgressBar: React.FC = () => {
   }, []);
 
   return (
-      <Bar widthPercents={scrollPercentState} >
-        <Doge src={Images.UNDER_DOG.source}/>
-      </Bar>
+    <Bar widthPercents={scrollPercentState}>
+      <Doge
+        src={
+          dogMoving ? Images.UNDER_DOG.source : Images.UNDER_DOG_STATIC.source
+        }
+      />
+    </Bar>
   );
 };
 

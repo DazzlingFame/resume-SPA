@@ -17,6 +17,7 @@ import dlims from './assets/images/dlims-photo.png'
 import e2eStep from './assets/images/e2e-step-def.png'
 import ordersBoard from './assets/images/orders-board.png'
 import underDog from './assets/images/under-dog.gif';
+import upderDogStatic from './assets/images/under-dog-static.png';
 
 export type ImageSource = {
     source: string;
@@ -84,6 +85,9 @@ export const Images: Record<string, ImageSource> = {
     },
     UNDER_DOG: {
         source: underDog, desc: 'undertale_dog_gif'
+    },
+    UNDER_DOG_STATIC: {
+        source: upderDogStatic, desc: 'undertale_dog_gif'
     },
 };
 
