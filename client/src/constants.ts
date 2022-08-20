@@ -12,10 +12,10 @@ import phoneLogo from './assets/images/phone-64x64.png'
 import telegramLogo from './assets/images/telegram-64x64.png'
 import instagramLogo from './assets/images/instagram.png'
 import githubLogo from './assets/images/github.png'
-import ordersMapPhoto from './assets/images/map-photo.png'
+import ordersMapPhoto from './assets/images/map.png'
 import dlims from './assets/images/dlims-photo.png'
 import e2eStep from './assets/images/e2e-step-def.png'
-import ordersBoard from './assets/images/orders-board.png'
+import ordersBoard from './assets/images/board.png'
 import underDog from './assets/images/under-dog.gif';
 import upderDogStatic from './assets/images/under-dog-static.png';
 
@@ -26,7 +26,7 @@ export type ImageSource = {
 
 export const COLORS = {
     primaryColor: '#344955',
-    primaryDark: '#232F34',
+    primaryDark: '#232B34',
     primaryLight: '#4A6572',
     secondaryColor: '#E99922',
     secondaryLight: '#F9AA33',
@@ -191,11 +191,12 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 header: 'Development',
                 mainData: "I have been developing mobile and web applications since 2019. I originally started as a React-Native developer. My team and I worked on a new application for executors, " +
                     "which replaced old Kotlin and Swift applications. I have solved many tasks of transferring functionality to a new platform and improving it: creating the client side of " +
-                    "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others.\nOver time, the company began to update the site for executors with " +
+                    "filters for finding the necessary orders, a Cross-Sell system, in-app notifications, and many others.\n\nOver time, the company began to update the site for executors with " +
                     "the subsequent transition to React, in which I also take an active part, developing not only visual components, but also low-level logic of the new orders board, " +
-                    "including: universal logic of pagination, caching page data for instant back navigation, analytics of objects entering the viewport, and much more. \n\n" +
-                    "Now I am a developer at PROFI, who is not afraid of new challenges and is always ready to learn.",
-                skills: 'Skills: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
+                    "including: universal logic of pagination, caching page data for instant back navigation, analytics of objects entering the viewport, and much more, as well as large " +
+                    "product features, such as: a orders map by Yandex Map SDK technologies, a system for assessing the quality of a orders search engine response orders, etc. \n\n" +
+                    "Now I am a leading frontend developer at PROFI search team, who has implemented many large projects and is not afraid of new challenges.",
+                skills: 'I directly use: TypeScript, JavaScript, React, React-Native, Redux, CSS, Jira, Agile, Scrum',
                 continue: '... Read more',
             },
         },
@@ -216,12 +217,13 @@ export const multiLanguageTexts: MultiLanguageTexts = {
                 header: 'Разработка',
                 mainData: "Я занимаюсь разработкой мобильных и Web приложений с 2019 года. Изначально я начал как React-Native разработчик. Мы с командой трудились над новым приложением для " +
                     "специалистов, которое пришло на замену старых приложений на Kotlin и Swift. Я решил много задач по переносу функционала на новую платформу и его усовершенствованию: " +
-                    "создание клиентской части фильтров для поиска нужных заказов, системы Cross-Sell, in-app уведомлений и многие другие.\nСо временем компания начала обновлять сайт для " +
+                    "создание клиентской части фильтров для поиска нужных заказов, системы Cross-Sell, in-app уведомлений итд.\n\nСо временем компания начала обновлять сайт для " +
                     "специалистов с последующим переходом на React, в чем я так же принял активное участие, занявшись разработкой не только визуальных компонентов, но и низкоуровневой логики " +
-                    "работы новой доски заказов, в том числе: универсальной логики пагинации, кэширования данных на страницы для реализации мгновенного возврата, аналитики попадания объектов во " +
-                    "вьюпорт и многим другим. \n\n" +
-                    "Сейчас я developer в ПРОФИ, который не боится новых вызовов и всегда готов учиться.",
-                skills: 'Навыки: TypeScript, JavaScript, CSS, React, React-Native, Flow, Jira, Agile, Scrum',
+                    "работы новой доски заказов, в том числе: универсальной логики пагинации, кэширования данных на странице для реализации мгновенного возврата, аналитики попадания объектов во " +
+                    "вьюпорт и многим другим, а так же крупных продуктовых фич, таких как: карта заказов на технологии Yandex Map SDK, система оценки качества выдачи поисковой системы заказов итд. " +
+                    "\n\n На текущий момент я лидирующий фронтенд разработчик в команде поиска ПРОФИ, реализовавший множество крупных проектов и не боящийся новых вызовов",
+
+                skills: 'Я непосредственно работаю с технологиями: TypeScript, JavaScript, React, React-Native, Redux, CSS, Jira, Agile, Scrum',
                 continue: '... Далее',
             },
         },
