@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { getHeight } from "../../utils/global";
 import styled from "styled-components";
-import { COLORS, Images } from "../../constants";
+import { Images } from "../../constants";
 import debounce from "lodash.debounce";
 
 type BarProps = {
@@ -18,7 +18,6 @@ const Bar = styled.div.attrs<BarProps>(({ widthPercents }) => ({
   left: 0;
   display: flex;
   justify-content: flex-end;
-  border-bottom: 2px solid ${COLORS.secondaryLight};
   z-index: 9999;
 `;
 
