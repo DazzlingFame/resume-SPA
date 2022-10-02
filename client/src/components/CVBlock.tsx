@@ -13,10 +13,14 @@ import {
 
 type Props = {
   CVData: CVTexts;
+  containerRef: React.RefObject<HTMLDivElement>;
 };
 
-export const CVBlock: React.FC<Props> = ({ CVData: { data, header } }) => (
-  <Container>
+export const CVBlock: React.FC<Props> = ({
+  CVData: { data, header },
+  containerRef,
+}) => (
+  <Container ref={containerRef}>
     {!!header && <p className={"bold_subheader_text"}>{header}</p>}
     <CVContainer>
       <ColumnContainer>
