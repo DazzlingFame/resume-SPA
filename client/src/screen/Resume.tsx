@@ -15,6 +15,7 @@ import { SelectorItem } from "../components/selector/SelectorComponent";
 import PageScrollProgressBar from "../components/pageScrollProgressBar";
 import { Container, HeaderContainer, RootContainer } from "./ResumeStyles";
 import { Navigation } from "../components/Navigation";
+import { CVBlock } from "../components/CVBlock";
 
 export const Resume: React.FC = () => {
   const workRef = createRef<HTMLDivElement>();
@@ -68,6 +69,9 @@ export const Resume: React.FC = () => {
         {!isMobile && (
           <span className={"bold_header_text"}>{mainTexts.welcome}</span>
         )}
+        <CVBlock
+          CVData={getLocalisedTexts(multiLanguageTexts.cvTexts, locale)}
+        />
         <WorkContent
           containerRef={workRef}
           texts={getLocalisedTexts(multiLanguageTexts.workTexts, locale)}
