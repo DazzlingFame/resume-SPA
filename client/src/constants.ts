@@ -110,6 +110,7 @@ export const Images: Record<string, ImageSource> = {
 };
 
 export type HeaderLinksText = {
+  CV: string;
   work: string;
   about: string;
   contacts: string;
@@ -162,6 +163,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
     en: {
       header: "Slava K.",
       headerLinks: {
+        CV: "CV",
         work: "Work",
         about: "About",
         contacts: "Contacts",
@@ -171,6 +173,7 @@ export const multiLanguageTexts: MultiLanguageTexts = {
     ru: {
       header: "Вячеслав К.",
       headerLinks: {
+        CV: "CV",
         work: "Работа",
         about: "Обо мне",
         contacts: "Контакты",

@@ -21,6 +21,7 @@ export const Resume: React.FC = () => {
   const workRef = createRef<HTMLDivElement>();
   const aboutRef = createRef<HTMLDivElement>();
   const contactsRef = createRef<HTMLDivElement>();
+  const CVRef = createRef<HTMLDivElement>();
   const [locale, setLocale] = useState(getLocaleFromStorage());
   const isMobile = useMedia(IS_MOBILE_LAYOUT_MEDIA);
 
@@ -59,6 +60,7 @@ export const Resume: React.FC = () => {
           </div>
           <Navigation
             navigationItems={[
+              { title: mainTexts.headerLinks.CV, ref: CVRef },
               { title: mainTexts.headerLinks.work, ref: workRef },
               { title: mainTexts.headerLinks.about, ref: aboutRef },
               { title: mainTexts.headerLinks.contacts, ref: contactsRef },
@@ -70,6 +72,7 @@ export const Resume: React.FC = () => {
           <span className={"bold_header_text"}>{mainTexts.welcome}</span>
         )}
         <CVBlock
+          containerRef={CVRef}
           CVData={getLocalisedTexts(multiLanguageTexts.cvTexts, locale)}
         />
         <WorkContent
