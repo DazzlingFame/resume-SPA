@@ -235,6 +235,18 @@ export const multiLanguageTexts: MultiLanguageTexts = {
           year: "2022",
           info: "Getting a Senior Frontend Developer position",
         },
+        {
+          year: "2022",
+          info: 'Victory in the PROFI hackathon with the project "Specialists rewards"',
+        },
+        {
+          year: "2023",
+          info: 'Getting a "Middle Frontend" cource reviewer position at Yandex Practicum',
+        },
+        {
+          year: "2023",
+          info: "Getting a Team Lead position at Profi",
+        },
       ],
     },
     ru: {
@@ -264,6 +276,18 @@ export const multiLanguageTexts: MultiLanguageTexts = {
         {
           year: "2022",
           info: "Получение позиции Senior Frontend Developer",
+        },
+        {
+          year: "2022",
+          info: 'Победа в хакатоне ПРОФИ с проектом "Награды специалистов"',
+        },
+        {
+          year: "2023",
+          info: 'Получение позиции ревьювера курса "Middle Frontend Developer" в Яндекс Практикум',
+        },
+        {
+          year: "2023",
+          info: 'Получение позиции Тимлида команды "Поиск" в Профи',
         },
       ],
     },
